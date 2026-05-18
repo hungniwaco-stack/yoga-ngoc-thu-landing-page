@@ -594,8 +594,10 @@
 
       .contact-grid {
         display: grid;
-        grid-template-columns: 0.85fr 1.15fr;
+        grid-template-columns: 1fr;
         gap: 28px;
+        max-width: 760px;
+        margin: 0 auto;
       }
 
       .contact-panel,
@@ -978,7 +980,7 @@
           <div class="price-note">
             <strong>Nhận tư vấn lớp phù hợp</strong>
             <p>Chia sẻ thể trạng, lịch rảnh và mục tiêu của bạn. Yoga Ngọc Thư sẽ gợi ý hình thức tập phù hợp hơn.</p>
-            <a class="btn" href="#lien-he">Để lại thông tin</a>
+            <a class="btn" href="#lien-he">Liên hệ tư vấn</a>
           </div>
         </div>
       </section>
@@ -1039,7 +1041,7 @@
         <div class="container">
           <h2 id="final-title">Cơ thể bạn xứng đáng được chăm sóc một cách dịu dàng và bền bỉ.</h2>
           <p class="lead">
-            Để lại thông tin để Yoga Ngọc Thư tư vấn lớp học phù hợp với thể trạng, lịch sinh hoạt và mục tiêu hiện tại của bạn.
+            Liên hệ Yoga Ngọc Thư để được tư vấn lớp học phù hợp với thể trạng, lịch sinh hoạt và mục tiêu hiện tại của bạn.
           </p>
           <div class="section-actions">
             <a class="btn" href="#lien-he">Đăng ký tư vấn ngay</a>
@@ -1053,7 +1055,7 @@
             <p class="section-kicker">Liên hệ</p>
             <h2 id="contact-title">Yoga Ngọc Thư</h2>
             <p>
-              Gửi thông tin của bạn để được tư vấn lớp học phù hợp. Có thể bổ sung số điện thoại, Zalo hoặc địa chỉ studio vào phần này khi có dữ liệu chính thức.
+              Có thể bổ sung số điện thoại, Zalo hoặc địa chỉ studio vào phần này khi có dữ liệu chính thức.
             </p>
             <ul class="check-list">
               <li>Tư vấn theo thể trạng và mục tiêu cá nhân.</li>
@@ -1061,38 +1063,6 @@
               <li>Ưu tiên sự an toàn, đều đặn và cảm giác thoải mái khi tập.</li>
             </ul>
           </div>
-          <form id="leadForm">
-            <div class="field-grid">
-              <label>
-                Họ và tên
-                <input name="name" autocomplete="name" placeholder="Nhập tên của bạn" required />
-              </label>
-              <label>
-                Số điện thoại
-                <input name="phone" autocomplete="tel" placeholder="Nhập số điện thoại" required />
-              </label>
-              <label>
-                Mục tiêu chính
-                <select name="goal" required>
-                  <option value="">Chọn mục tiêu</option>
-                  <option>Giảm đau mỏi, cải thiện tư thế</option>
-                  <option>Giữ dáng, săn chắc cơ thể</option>
-                  <option>Giảm stress, ngủ tốt hơn</option>
-                  <option>Bắt đầu tập yoga từ đầu</option>
-                </select>
-              </label>
-              <label>
-                Khung giờ tiện trao đổi
-                <input name="time" placeholder="Ví dụ: 19:00-21:00" />
-              </label>
-              <label class="full">
-                Ghi chú thêm
-                <textarea name="message" placeholder="Bạn có đau mỏi, chấn thương hoặc mục tiêu cụ thể nào muốn chia sẻ không?"></textarea>
-              </label>
-            </div>
-            <button class="btn" type="submit">Gửi thông tin tư vấn</button>
-            <p class="form-note" id="formNote" role="status" aria-live="polite"></p>
-          </form>
         </div>
       </section>
     </main>
@@ -1104,16 +1074,5 @@
       </div>
     </footer>
 
-    <script>
-      const form = document.querySelector("#leadForm");
-      const note = document.querySelector("#formNote");
-
-      form.addEventListener("submit", (event) => {
-        event.preventDefault();
-        const data = Object.fromEntries(new FormData(form).entries());
-        note.textContent = `Cảm ơn ${data.name || "bạn"}. Thông tin đã được ghi nhận trên trang demo.`;
-        form.reset();
-      });
-    </script>
   </body>
 </html>
