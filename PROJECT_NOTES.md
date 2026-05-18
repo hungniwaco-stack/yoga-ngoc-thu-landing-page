@@ -52,7 +52,20 @@ Các section hiện có:
 
 ## Thay đổi sau cùng
 
-Đã xóa form liên hệ gồm:
+Đã thêm ảnh bảng hiệu luxury vào đầu trang:
+
+- File ảnh: `Anh/bang-hieu-luxury-yoga.png`
+- Nguồn ban đầu: `C:/Users/Admin/Downloads/01. Bảng hiệu - Phong cách Luxury Yoga Studio (sang trọng – thu hút) 2.png`
+- Vị trí hiển thị: section đầu trang, ngay dưới header
+
+Đã thêm số tư vấn/liên hệ/Zalo:
+
+- Số điện thoại: `0918 890 212`
+- Link gọi điện: `tel:0918890212`
+- Link Zalo: `https://zalo.me/0918890212`
+- Vị trí: hero, khối tư vấn, final CTA/liên hệ
+
+Trước đó đã xóa form liên hệ gồm:
 
 - Họ và tên
 - Số điện thoại
@@ -83,4 +96,3 @@ Phần liên hệ hiện chỉ còn card thông tin Yoga Ngọc Thư và các bu
   6. Chờ GitHub Pages build xong
 - Nếu trang online vẫn hiện bản cũ, dùng cache-busting như `?v=<commit>` hoặc refresh mạnh `Ctrl + F5`.
 - Không đưa file `.docx` lên GitHub vì đã được ignore.
-
