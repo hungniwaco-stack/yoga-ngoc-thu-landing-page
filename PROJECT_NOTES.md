@@ -92,10 +92,11 @@ Phần liên hệ hiện chỉ còn card thông tin Yoga Ngọc Thư và các bu
 
 - Tài khoản Vercel CLI đã đăng nhập: `hungniwaco-8245`
 - Vercel team/scope: `hungs-projects-fdde2488`
-- Project Vercel: `landing-page-planner`
+- Project Vercel hiện tại: `yoga-ngocthu`
 - Repo GitHub đã được Vercel kết nối: `https://github.com/hungniwaco-stack/yoga-ngoc-thu-landing-page`
-- Dashboard/inspect: `https://vercel.com/hungs-projects-fdde2488/landing-page-planner`
-- Website Vercel production: `https://landing-page-planner.vercel.app`
+- Dashboard/inspect: `https://vercel.com/hungs-projects-fdde2488/yoga-ngocthu`
+- Website Vercel production public hiện tại: `https://landing-page-planner.vercel.app`
+- Lưu ý: Sau khi đổi tên project trên Vercel, domain public production vẫn đang là `landing-page-planner.vercel.app`. Alias thử theo tên mới `https://yogangocthu.vercel.app` đang bị Vercel Authentication chặn, chưa nên dùng làm link công khai.
 - Lệnh deploy production thủ công: `npx vercel --prod --yes`
 - `.vercel` được ignore trong Git; `.vercelignore` dùng để không upload file Word/thư mục phụ lên Vercel.
 
