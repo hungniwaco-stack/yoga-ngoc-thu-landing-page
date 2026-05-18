@@ -94,12 +94,18 @@
       .brand-mark {
         width: 42px;
         height: 42px;
-        display: grid;
-        place-items: center;
         border-radius: 50%;
+        overflow: hidden;
+        border: 2px solid var(--leaf);
         background: var(--leaf);
-        color: var(--paper);
-        font-size: 20px;
+        box-shadow: 0 8px 18px rgba(23, 61, 46, 0.16);
+      }
+
+      .brand-mark img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: 52% 35%;
       }
 
       .nav-links {
@@ -825,7 +831,9 @@
     <header class="site-header">
       <div class="container nav">
         <a class="brand" href="#top" aria-label="Yoga Ngọc Thư">
-          <span class="brand-mark">Y</span>
+          <span class="brand-mark">
+            <img src="Anh/chan-dung-logo.jpg" alt="Chân dung Yoga Ngọc Thư" />
+          </span>
           <span>Yoga Ngọc Thư</span>
         </a>
         <nav class="nav-links" aria-label="Điều hướng chính">

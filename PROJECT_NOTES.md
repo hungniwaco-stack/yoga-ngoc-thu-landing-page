@@ -49,6 +49,8 @@ Các section hiện có:
 - `Anh/00.jpg`: hero card và gallery
 - `Anh/03.jpg`: section lợi ích
 - `Anh/01.jpg`, `Anh/02.jpg`, `Anh/04.jpg`: gallery
+- `Anh/chan-dung.jpg`: ảnh chân dung nguồn, tên ASCII để dùng an toàn trên web/GitHub Pages
+- `Anh/chan-dung-logo.jpg`: logo tròn ở header, được crop từ `Anh/chan-dung.jpg`
 
 ## Thay đổi sau cùng
 
