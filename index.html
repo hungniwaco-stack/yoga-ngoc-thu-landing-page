@@ -1,0 +1,1119 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yoga Ngọc Thư | Đánh thức năng lượng, cân bằng thân tâm</title>
+    <meta
+      name="description"
+      content="Lớp Yoga Ngọc Thư dành cho phụ nữ muốn cải thiện sức khỏe, giảm căng thẳng, giữ dáng nhẹ nhàng và xây dựng thói quen sống cân bằng."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --leaf: #2f6b4f;
+        --leaf-dark: #173d2e;
+        --mint: #dceee5;
+        --sage: #7fa28b;
+        --rose: #d8917c;
+        --rose-dark: #a65f4d;
+        --cream: #fbf8f1;
+        --paper: #fffdf8;
+        --ink: #1d2b25;
+        --muted: #66736d;
+        --line: rgba(47, 107, 79, 0.18);
+        --shadow: 0 24px 70px rgba(23, 61, 46, 0.12);
+        --radius: 8px;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+
+      body {
+        margin: 0;
+        font-family: "Be Vietnam Pro", Arial, sans-serif;
+        color: var(--ink);
+        background: var(--cream);
+        line-height: 1.6;
+      }
+
+      img {
+        display: block;
+        max-width: 100%;
+      }
+
+      a {
+        color: inherit;
+        text-decoration: none;
+      }
+
+      .container {
+        width: min(1120px, calc(100% - 40px));
+        margin: 0 auto;
+      }
+
+      .site-header {
+        position: sticky;
+        top: 0;
+        z-index: 20;
+        background: rgba(251, 248, 241, 0.92);
+        border-bottom: 1px solid var(--line);
+        backdrop-filter: blur(16px);
+      }
+
+      .nav {
+        min-height: 72px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 20px;
+      }
+
+      .brand {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        font-weight: 800;
+        color: var(--leaf-dark);
+      }
+
+      .brand-mark {
+        width: 42px;
+        height: 42px;
+        display: grid;
+        place-items: center;
+        border-radius: 50%;
+        background: var(--leaf);
+        color: var(--paper);
+        font-size: 20px;
+      }
+
+      .nav-links {
+        display: flex;
+        align-items: center;
+        gap: 26px;
+        color: var(--muted);
+        font-size: 14px;
+        font-weight: 600;
+      }
+
+      .nav-links a:hover {
+        color: var(--leaf-dark);
+      }
+
+      .btn {
+        min-height: 46px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        padding: 0 22px;
+        border: 0;
+        border-radius: var(--radius);
+        background: var(--leaf);
+        color: white;
+        font: inherit;
+        font-weight: 800;
+        cursor: pointer;
+        box-shadow: 0 12px 28px rgba(47, 107, 79, 0.24);
+        transition:
+          transform 0.2s ease,
+          background 0.2s ease,
+          box-shadow 0.2s ease;
+      }
+
+      .btn:hover {
+        transform: translateY(-2px);
+        background: var(--leaf-dark);
+        box-shadow: 0 16px 34px rgba(47, 107, 79, 0.3);
+      }
+
+      .btn.secondary {
+        background: var(--paper);
+        color: var(--leaf-dark);
+        border: 1px solid var(--line);
+        box-shadow: none;
+      }
+
+      .hero {
+        min-height: calc(100vh - 72px);
+        display: grid;
+        align-items: center;
+        padding: 74px 0 56px;
+        background:
+          linear-gradient(90deg, rgba(251, 248, 241, 0.98) 0%, rgba(251, 248, 241, 0.82) 46%, rgba(251, 248, 241, 0.2) 100%),
+          url("Anh/05.jpg") center right / cover;
+      }
+
+      .hero-grid {
+        display: grid;
+        grid-template-columns: minmax(0, 1.02fr) minmax(280px, 0.78fr);
+        gap: 48px;
+        align-items: center;
+      }
+
+      .eyebrow {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        padding: 8px 12px;
+        border: 1px solid var(--line);
+        border-radius: 999px;
+        background: rgba(255, 253, 248, 0.76);
+        color: var(--leaf-dark);
+        font-size: 13px;
+        font-weight: 800;
+      }
+
+      h1,
+      h2,
+      h3,
+      p {
+        margin-top: 0;
+      }
+
+      h1 {
+        max-width: 760px;
+        margin-bottom: 22px;
+        font-size: clamp(42px, 7vw, 82px);
+        line-height: 1.02;
+        letter-spacing: 0;
+        color: var(--leaf-dark);
+      }
+
+      h2 {
+        max-width: 780px;
+        margin-bottom: 16px;
+        font-size: clamp(30px, 4vw, 52px);
+        line-height: 1.12;
+        letter-spacing: 0;
+        color: var(--leaf-dark);
+      }
+
+      h3 {
+        margin-bottom: 10px;
+        font-size: 20px;
+        line-height: 1.25;
+        color: var(--leaf-dark);
+      }
+
+      .lead {
+        max-width: 680px;
+        color: #45544d;
+        font-size: clamp(17px, 2vw, 21px);
+      }
+
+      .hero-actions,
+      .section-actions {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 14px;
+        margin-top: 30px;
+      }
+
+      .trust-row {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 14px;
+        margin-top: 38px;
+        max-width: 660px;
+      }
+
+      .trust-item {
+        padding: 18px;
+        border: 1px solid var(--line);
+        border-radius: var(--radius);
+        background: rgba(255, 253, 248, 0.78);
+      }
+
+      .trust-item strong {
+        display: block;
+        color: var(--leaf-dark);
+      }
+
+      .trust-item span {
+        color: var(--muted);
+        font-size: 13px;
+      }
+
+      .hero-card {
+        align-self: end;
+        padding: 22px;
+        border: 1px solid rgba(255, 255, 255, 0.54);
+        border-radius: var(--radius);
+        background: rgba(255, 253, 248, 0.78);
+        box-shadow: var(--shadow);
+        backdrop-filter: blur(18px);
+      }
+
+      .hero-card img {
+        width: 100%;
+        aspect-ratio: 4 / 5;
+        object-fit: cover;
+        border-radius: var(--radius);
+      }
+
+      .mini-note {
+        margin: 18px 0 0;
+        color: var(--muted);
+        font-size: 14px;
+      }
+
+      section {
+        padding: 92px 0;
+      }
+
+      .section-kicker {
+        margin-bottom: 10px;
+        color: var(--rose-dark);
+        font-size: 13px;
+        font-weight: 800;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+      }
+
+      .section-intro {
+        max-width: 680px;
+        margin-bottom: 34px;
+        color: var(--muted);
+        font-size: 18px;
+      }
+
+      .pain {
+        background: var(--paper);
+      }
+
+      .pain-grid,
+      .benefit-grid,
+      .program-grid,
+      .proof-grid,
+      .faq-grid {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 18px;
+      }
+
+      .card {
+        min-height: 100%;
+        padding: 26px;
+        border: 1px solid var(--line);
+        border-radius: var(--radius);
+        background: var(--paper);
+      }
+
+      .pain .card {
+        background: var(--cream);
+      }
+
+      .icon {
+        width: 42px;
+        height: 42px;
+        display: grid;
+        place-items: center;
+        margin-bottom: 18px;
+        border-radius: 50%;
+        background: var(--mint);
+        color: var(--leaf-dark);
+        font-size: 20px;
+      }
+
+      .bridge {
+        margin-top: 30px;
+        padding: 26px;
+        border-left: 5px solid var(--rose);
+        background: #fff7f1;
+        color: var(--leaf-dark);
+        font-size: 20px;
+        font-weight: 700;
+      }
+
+      .split {
+        display: grid;
+        grid-template-columns: minmax(0, 0.92fr) minmax(300px, 1.08fr);
+        gap: 54px;
+        align-items: center;
+      }
+
+      .image-panel {
+        overflow: hidden;
+        border-radius: var(--radius);
+        box-shadow: var(--shadow);
+      }
+
+      .image-panel img {
+        width: 100%;
+        aspect-ratio: 5 / 4;
+        object-fit: cover;
+      }
+
+      .benefit-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      .benefit-grid .card {
+        background: rgba(255, 253, 248, 0.78);
+      }
+
+      .check-list {
+        display: grid;
+        gap: 12px;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+      }
+
+      .check-list li {
+        display: grid;
+        grid-template-columns: 28px 1fr;
+        gap: 10px;
+        color: #415149;
+      }
+
+      .check-list li::before {
+        content: "✓";
+        width: 28px;
+        height: 28px;
+        display: grid;
+        place-items: center;
+        border-radius: 50%;
+        background: var(--mint);
+        color: var(--leaf-dark);
+        font-weight: 800;
+      }
+
+      .program {
+        background: var(--paper);
+      }
+
+      .program-grid {
+        grid-template-columns: 0.85fr 1.15fr;
+      }
+
+      .steps {
+        counter-reset: step;
+        display: grid;
+        gap: 16px;
+      }
+
+      .step {
+        counter-increment: step;
+        display: grid;
+        grid-template-columns: 52px 1fr;
+        gap: 16px;
+        padding: 20px;
+        border: 1px solid var(--line);
+        border-radius: var(--radius);
+        background: var(--cream);
+      }
+
+      .step::before {
+        content: counter(step, decimal-leading-zero);
+        display: grid;
+        place-items: center;
+        width: 52px;
+        height: 52px;
+        border-radius: 50%;
+        background: var(--leaf);
+        color: white;
+        font-weight: 800;
+      }
+
+      .outcomes {
+        background: linear-gradient(135deg, var(--leaf-dark), #2f6b4f);
+        color: white;
+      }
+
+      .outcomes h2,
+      .outcomes h3,
+      .outcomes .section-kicker {
+        color: white;
+      }
+
+      .outcomes .section-intro,
+      .outcomes p {
+        color: rgba(255, 255, 255, 0.8);
+      }
+
+      .outcomes .card {
+        border-color: rgba(255, 255, 255, 0.16);
+        background: rgba(255, 255, 255, 0.08);
+      }
+
+      .proof-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .gallery {
+        background: var(--paper);
+      }
+
+      .gallery-grid {
+        display: grid;
+        grid-template-columns: 1.15fr 0.85fr 0.85fr;
+        grid-auto-rows: 230px;
+        gap: 14px;
+      }
+
+      .gallery-item {
+        position: relative;
+        overflow: hidden;
+        border-radius: var(--radius);
+        background: var(--mint);
+        box-shadow: 0 16px 42px rgba(23, 61, 46, 0.1);
+      }
+
+      .gallery-item.large {
+        grid-row: span 2;
+      }
+
+      .gallery-item img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      .gallery-item::after {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(180deg, rgba(23, 61, 46, 0), rgba(23, 61, 46, 0.12));
+        pointer-events: none;
+      }
+
+      .quote {
+        position: relative;
+        padding: 30px;
+        border-radius: var(--radius);
+        background: var(--paper);
+        border: 1px solid var(--line);
+      }
+
+      .quote::before {
+        content: "“";
+        position: absolute;
+        top: -18px;
+        left: 20px;
+        color: var(--rose);
+        font-size: 76px;
+        line-height: 1;
+        font-weight: 800;
+      }
+
+      .quote p {
+        margin: 16px 0 18px;
+        color: #3f4f47;
+      }
+
+      .quote strong {
+        color: var(--leaf-dark);
+      }
+
+      .offer {
+        background: var(--paper);
+      }
+
+      .offer-box {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 32px;
+        align-items: center;
+        padding: 38px;
+        border: 1px solid var(--line);
+        border-radius: var(--radius);
+        background: var(--cream);
+        box-shadow: var(--shadow);
+      }
+
+      .price-note {
+        padding: 22px;
+        border-radius: var(--radius);
+        background: var(--paper);
+        border: 1px solid var(--line);
+      }
+
+      .price-note strong {
+        display: block;
+        margin-bottom: 8px;
+        color: var(--leaf-dark);
+        font-size: 22px;
+      }
+
+      .faq-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      details {
+        padding: 22px;
+        border: 1px solid var(--line);
+        border-radius: var(--radius);
+        background: var(--paper);
+      }
+
+      summary {
+        color: var(--leaf-dark);
+        font-weight: 800;
+        cursor: pointer;
+      }
+
+      details p {
+        margin: 14px 0 0;
+        color: var(--muted);
+      }
+
+      .final-cta {
+        padding: 86px 0;
+        background:
+          linear-gradient(90deg, rgba(23, 61, 46, 0.9), rgba(47, 107, 79, 0.72)),
+          url("Anh/05.jpg") center / cover;
+        color: white;
+      }
+
+      .final-cta h2,
+      .final-cta p {
+        color: white;
+      }
+
+      .final-cta .btn {
+        background: var(--rose);
+        color: var(--leaf-dark);
+      }
+
+      .contact {
+        background: var(--paper);
+      }
+
+      .contact-grid {
+        display: grid;
+        grid-template-columns: 0.85fr 1.15fr;
+        gap: 28px;
+      }
+
+      .contact-panel,
+      form {
+        padding: 28px;
+        border: 1px solid var(--line);
+        border-radius: var(--radius);
+        background: var(--cream);
+      }
+
+      .field-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 14px;
+      }
+
+      label {
+        display: grid;
+        gap: 8px;
+        color: var(--leaf-dark);
+        font-size: 14px;
+        font-weight: 700;
+      }
+
+      input,
+      select,
+      textarea {
+        width: 100%;
+        min-height: 48px;
+        padding: 12px 14px;
+        border: 1px solid var(--line);
+        border-radius: var(--radius);
+        background: var(--paper);
+        color: var(--ink);
+        font: inherit;
+      }
+
+      textarea {
+        min-height: 116px;
+        resize: vertical;
+      }
+
+      .full {
+        grid-column: 1 / -1;
+      }
+
+      .form-note {
+        min-height: 24px;
+        margin: 14px 0 0;
+        color: var(--leaf-dark);
+        font-weight: 700;
+      }
+
+      footer {
+        padding: 34px 0;
+        background: var(--leaf-dark);
+        color: rgba(255, 255, 255, 0.76);
+      }
+
+      footer .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 20px;
+      }
+
+      footer strong {
+        color: white;
+      }
+
+      @media (max-width: 900px) {
+        .nav-links {
+          display: none;
+        }
+
+        .hero {
+          min-height: auto;
+          padding: 56px 0;
+          background:
+            linear-gradient(180deg, rgba(251, 248, 241, 0.96), rgba(251, 248, 241, 0.88)),
+            url("Anh/05.jpg") center / cover;
+        }
+
+        .hero-grid,
+        .split,
+        .program-grid,
+        .offer-box,
+        .contact-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .trust-row,
+        .pain-grid,
+        .benefit-grid,
+        .proof-grid,
+        .gallery-grid,
+        .faq-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .gallery-grid {
+          grid-auto-rows: 260px;
+        }
+
+        .gallery-item.large {
+          grid-row: span 1;
+        }
+
+        section {
+          padding: 70px 0;
+        }
+
+        .hero-card {
+          max-width: 420px;
+        }
+      }
+
+      @media (max-width: 620px) {
+        .container {
+          width: min(100% - 28px, 1120px);
+        }
+
+        .nav {
+          min-height: 64px;
+        }
+
+        .brand-mark {
+          width: 38px;
+          height: 38px;
+        }
+
+        .hero-actions,
+        .section-actions,
+        footer .container {
+          align-items: stretch;
+          flex-direction: column;
+        }
+
+        .btn {
+          width: 100%;
+        }
+
+        .card,
+        .offer-box,
+        .contact-panel,
+        form {
+          padding: 22px;
+        }
+
+        .field-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .step {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav">
+        <a class="brand" href="#top" aria-label="Yoga Ngọc Thư">
+          <span class="brand-mark">Y</span>
+          <span>Yoga Ngọc Thư</span>
+        </a>
+        <nav class="nav-links" aria-label="Điều hướng chính">
+          <a href="#loi-ich">Lợi ích</a>
+          <a href="#lo-trinh">Lộ trình</a>
+          <a href="#faq">FAQ</a>
+          <a href="#lien-he">Liên hệ</a>
+        </nav>
+        <a class="btn" href="#lien-he">Đăng ký tư vấn</a>
+      </div>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="container hero-grid">
+          <div>
+            <span class="eyebrow">Yoga cho phụ nữ muốn khỏe đẹp và cân bằng hơn</span>
+            <h1 id="hero-title">Đánh thức năng lượng, cân bằng thân tâm</h1>
+            <p class="lead">
+              Lớp Yoga Ngọc Thư đồng hành cùng bạn cải thiện sự dẻo dai, giải tỏa căng thẳng và xây dựng thói quen chăm sóc bản thân nhẹ nhàng, bền vững.
+            </p>
+            <div class="hero-actions">
+              <a class="btn" href="#lien-he">Nhận tư vấn lớp phù hợp</a>
+              <a class="btn secondary" href="#lo-trinh">Xem lộ trình tập</a>
+            </div>
+            <div class="trust-row" aria-label="Điểm nổi bật">
+              <div class="trust-item">
+                <strong>Cho người mới</strong>
+                <span>Dễ bắt đầu, có hướng dẫn sát sao</span>
+              </div>
+              <div class="trust-item">
+                <strong>Cá nhân hóa</strong>
+                <span>Theo thể trạng và mục tiêu riêng</span>
+              </div>
+              <div class="trust-item">
+                <strong>Nhẹ mà sâu</strong>
+                <span>Kết hợp thở, thiền và yoga trị liệu</span>
+              </div>
+            </div>
+          </div>
+          <aside class="hero-card" aria-label="Không gian tập luyện">
+            <img
+              src="Anh/00.jpg"
+              alt="Học viên Yoga Ngọc Thư thực hiện động tác đứng cân bằng"
+            />
+            <p class="mini-note">Không gian yên tĩnh, tận tâm chỉnh từng động tác để bạn tập đúng và cảm thấy an toàn hơn.</p>
+          </aside>
+        </div>
+      </section>
+
+      <section class="pain" aria-labelledby="pain-title">
+        <div class="container">
+          <p class="section-kicker">Bạn có đang gặp những điều này?</p>
+          <h2 id="pain-title">Cơ thể mỏi mệt không chỉ vì thiếu vận động, mà còn vì bạn đã bỏ quên chính mình quá lâu.</h2>
+          <p class="section-intro">
+            Yoga Ngọc Thư được thiết kế cho những người bận rộn, ít vận động hoặc đang cần một cách tập nhẹ nhàng hơn để quay lại với cơ thể.
+          </p>
+          <div class="pain-grid">
+            <article class="card">
+              <div class="icon">01</div>
+              <h3>Đau lưng, mỏi cổ vai gáy</h3>
+              <p>Bạn ngồi nhiều, làm việc máy tính liên tục và thường thấy cơ thể cứng, nặng nề, khó thư giãn.</p>
+            </article>
+            <article class="card">
+              <div class="icon">02</div>
+              <h3>Stress, mất ngủ, thiếu năng lượng</h3>
+              <p>Áp lực công việc và cuộc sống khiến bạn dễ căng thẳng, ngủ không sâu và bắt đầu ngày mới trong trạng thái uể oải.</p>
+            </article>
+            <article class="card">
+              <div class="icon">03</div>
+              <h3>Muốn giữ dáng nhưng ngại tập nặng</h3>
+              <p>Bạn muốn cơ thể săn chắc, tự tin hơn nhưng không phù hợp với những bài tập cường độ cao hoặc quá áp lực.</p>
+            </article>
+          </div>
+          <div class="bridge">Nếu bạn thấy mình trong những điều trên, bạn không cần ép bản thân thay đổi thật nhanh. Bạn chỉ cần bắt đầu đúng cách và duy trì đều đặn.</div>
+        </div>
+      </section>
+
+      <section id="loi-ich" aria-labelledby="benefit-title">
+        <div class="container split">
+          <div class="image-panel">
+            <img
+              src="Anh/03.jpg"
+              alt="Học viên Yoga Ngọc Thư thực hành động tác nâng chân trên thảm"
+            />
+          </div>
+          <div>
+            <p class="section-kicker">Giá trị cốt lõi</p>
+            <h2 id="benefit-title">Một hành trình tập luyện để cơ thể nhẹ hơn, tâm trí yên hơn và bạn tự tin hơn mỗi ngày.</h2>
+            <p class="section-intro">
+              Mỗi buổi tập là sự kết hợp giữa chuyển động, hơi thở và sự lắng nghe cơ thể. Nội dung được điều chỉnh để phù hợp với người mới, phụ nữ văn phòng, mẹ sau sinh và người muốn chăm sóc sức khỏe lâu dài.
+            </p>
+            <div class="benefit-grid">
+              <article class="card">
+                <h3>Dẻo dai và đúng tư thế hơn</h3>
+                <p>Hỗ trợ cải thiện độ linh hoạt, cảm nhận cơ thể và tư thế, đặc biệt với người ngồi nhiều.</p>
+              </article>
+              <article class="card">
+                <h3>Thư giãn và cân bằng cảm xúc</h3>
+                <p>Giúp bạn có khoảng thời gian buông áp lực, điều hòa hơi thở và tái tạo năng lượng sau ngày dài.</p>
+              </article>
+              <article class="card">
+                <h3>Giữ dáng nhẹ nhàng</h3>
+                <p>Hỗ trợ kiểm soát cân nặng và săn chắc cơ thể khi kết hợp cùng sinh hoạt, dinh dưỡng phù hợp.</p>
+              </article>
+              <article class="card">
+                <h3>Tự tin yêu bản thân</h3>
+                <p>Một không gian để bạn quay về chăm sóc chính mình, không so sánh và không áp lực.</p>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="lo-trinh" class="program" aria-labelledby="program-title">
+        <div class="container program-grid">
+          <div>
+            <p class="section-kicker">Bạn sẽ nhận được gì?</p>
+            <h2 id="program-title">Lộ trình rõ ràng, dễ theo đuổi lâu dài</h2>
+            <p class="section-intro">
+              Yoga Ngọc Thư không chỉ đưa bạn vào bài tập. Lớp học giúp bạn hiểu mình đang tập gì, vì sao tập động tác đó và làm thế nào để duy trì một nhịp sống khỏe hơn.
+            </p>
+            <ul class="check-list">
+              <li>Giáo trình linh hoạt theo thể trạng từng học viên.</li>
+              <li>Huấn luyện tận tâm, chú trọng chỉnh động tác.</li>
+              <li>Không gian tập luyện yên tĩnh, thư giãn.</li>
+              <li>Cộng đồng học viên tích cực, cùng nhau duy trì động lực.</li>
+            </ul>
+          </div>
+          <div class="steps">
+            <article class="step">
+              <div>
+                <h3>Lắng nghe cơ thể</h3>
+                <p>Khởi động nhẹ, nhận diện vùng căng cứng, đau mỏi và mục tiêu cá nhân trước khi bước vào bài tập.</p>
+              </div>
+            </article>
+            <article class="step">
+              <div>
+                <h3>Tập đúng và an toàn</h3>
+                <p>Thực hành các chuỗi động tác phù hợp, có điều chỉnh để hạn chế sai tư thế và giúp bạn tự tin hơn.</p>
+              </div>
+            </article>
+            <article class="step">
+              <div>
+                <h3>Thở, thiền và thư giãn</h3>
+                <p>Kết hợp hơi thở và thiền thư giãn để cơ thể được phục hồi, tâm trí dịu lại sau khi vận động.</p>
+              </div>
+            </article>
+            <article class="step">
+              <div>
+                <h3>Duy trì thói quen sống khỏe</h3>
+                <p>Hướng đến sự đều đặn, giúp bạn biến việc tập luyện thành một phần tự nhiên trong lịch sinh hoạt.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="outcomes" aria-labelledby="outcome-title">
+        <div class="container">
+          <p class="section-kicker">Kết quả có thể hướng tới</p>
+          <h2 id="outcome-title">Không phải thay đổi cực đoan. Là cảm giác tốt hơn từng tuần.</h2>
+          <p class="section-intro">
+            Khi tập đều đặn, nhiều học viên có thể cảm nhận cơ thể nhẹ nhàng, linh hoạt hơn, tinh thần tích cực hơn và hình thành thói quen chăm sóc bản thân bền vững. Kết quả thực tế phụ thuộc vào thể trạng, tần suất tập và lối sống của từng người.
+          </p>
+          <div class="pain-grid">
+            <article class="card">
+              <h3>Cơ thể</h3>
+              <p>Dẻo dai hơn, giảm cảm giác căng cứng, hỗ trợ cải thiện tư thế và sự linh hoạt trong sinh hoạt hằng ngày.</p>
+            </article>
+            <article class="card">
+              <h3>Tinh thần</h3>
+              <p>Có thêm khoảng nghỉ chất lượng, hỗ trợ giảm căng thẳng và giúp bạn chủ động cân bằng cảm xúc.</p>
+            </article>
+            <article class="card">
+              <h3>Thói quen</h3>
+              <p>Xây dựng nhịp tập nhẹ nhàng, đều đặn, phù hợp với người bận rộn và dễ duy trì lâu dài.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section aria-labelledby="proof-title">
+        <div class="container">
+          <p class="section-kicker">Vì sao chọn Yoga Ngọc Thư?</p>
+          <h2 id="proof-title">Tận tâm, gần gũi và phù hợp với người bắt đầu lại từ những điều nhỏ nhất.</h2>
+          <div class="proof-grid">
+            <article class="quote">
+              <p>
+                “Tôi muốn lớp học là nơi học viên được chỉnh sửa nhẹ nhàng, được lắng nghe và cảm thấy mình tiến bộ theo nhịp riêng, không cần so sánh với ai.”
+              </p>
+              <strong>Yoga Ngọc Thư</strong>
+            </article>
+            <article class="card">
+              <h3>Cam kết truyền thông trung thực</h3>
+              <p>
+                Trang này không dùng cam kết tuyệt đối về sức khỏe hay vóc dáng. Mọi lợi ích được diễn đạt theo hướng hỗ trợ, tùy thể trạng và cần duy trì đều đặn.
+              </p>
+              <div class="section-actions">
+                <a class="btn" href="#lien-he">Trao đổi mục tiêu của bạn</a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="offer" aria-labelledby="offer-title">
+        <div class="container offer-box">
+          <div>
+            <p class="section-kicker">Thông tin đăng ký</p>
+            <h2 id="offer-title">Bắt đầu bằng một buổi tư vấn để chọn lớp phù hợp</h2>
+            <p>
+              Vì giá, ưu đãi và quà tặng chưa được cung cấp trong tài liệu, landing page ưu tiên kêu gọi tư vấn trước. Đây là cách phù hợp để thu lead mà không đưa thông tin chưa chắc lên trang.
+            </p>
+          </div>
+          <div class="price-note">
+            <strong>Nhận tư vấn lớp phù hợp</strong>
+            <p>Chia sẻ thể trạng, lịch rảnh và mục tiêu của bạn. Yoga Ngọc Thư sẽ gợi ý hình thức tập phù hợp hơn.</p>
+            <a class="btn" href="#lien-he">Để lại thông tin</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="gallery" aria-labelledby="gallery-title">
+        <div class="container">
+          <p class="section-kicker">Hình ảnh lớp học</p>
+          <h2 id="gallery-title">Không gian tập luyện thực tế tại Yoga Ngọc Thư</h2>
+          <p class="section-intro">
+            Những khoảnh khắc trong lớp học giúp bạn hình dung rõ hơn về không khí tập luyện: tập trung, gần gũi và có sự hướng dẫn sát sao.
+          </p>
+          <div class="gallery-grid">
+            <figure class="gallery-item large">
+              <img src="Anh/05.jpg" alt="Toàn cảnh lớp học Yoga Ngọc Thư trong buổi tập nhóm" />
+            </figure>
+            <figure class="gallery-item">
+              <img src="Anh/01.jpg" alt="Giáo viên hỗ trợ học viên điều chỉnh động tác yoga" />
+            </figure>
+            <figure class="gallery-item">
+              <img src="Anh/02.jpg" alt="Nhóm học viên Yoga Ngọc Thư tập luyện trên thảm" />
+            </figure>
+            <figure class="gallery-item">
+              <img src="Anh/04.jpg" alt="Học viên thực hiện động tác giữ thăng bằng trên gạch yoga" />
+            </figure>
+            <figure class="gallery-item">
+              <img src="Anh/00.jpg" alt="Học viên thực hiện động tác đứng tại phòng tập Yoga Ngọc Thư" />
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <section id="faq" aria-labelledby="faq-title">
+        <div class="container">
+          <p class="section-kicker">Giải đáp nhanh</p>
+          <h2 id="faq-title">Những câu hỏi thường gặp trước khi bắt đầu</h2>
+          <div class="faq-grid">
+            <details>
+              <summary>Tôi chưa từng tập yoga, có theo được không?</summary>
+              <p>Có. Lớp phù hợp cho người mới bắt đầu, với bài tập và hướng dẫn được điều chỉnh theo thể trạng.</p>
+            </details>
+            <details>
+              <summary>Tập yoga có giúp giảm đau mỏi không?</summary>
+              <p>Yoga có thể hỗ trợ giảm cảm giác đau mỏi khi tập đúng cách và duy trì đều đặn. Nếu bạn có bệnh lý hoặc chấn thương, nên tham khảo chuyên môn y tế trước khi tập.</p>
+            </details>
+            <details>
+              <summary>Bao lâu thì cảm nhận được thay đổi?</summary>
+              <p>Mỗi người có tốc độ khác nhau. Nhiều thay đổi đến từ sự đều đặn, chế độ sinh hoạt và khả năng lắng nghe cơ thể trong quá trình tập.</p>
+            </details>
+            <details>
+              <summary>Lớp có phù hợp với phụ nữ sau sinh không?</summary>
+              <p>Có thể phù hợp tùy giai đoạn hồi phục. Bạn nên chia sẻ tình trạng hiện tại để được tư vấn bài tập nhẹ nhàng và an toàn hơn.</p>
+            </details>
+          </div>
+        </div>
+      </section>
+
+      <section class="final-cta" aria-labelledby="final-title">
+        <div class="container">
+          <h2 id="final-title">Cơ thể bạn xứng đáng được chăm sóc một cách dịu dàng và bền bỉ.</h2>
+          <p class="lead">
+            Để lại thông tin để Yoga Ngọc Thư tư vấn lớp học phù hợp với thể trạng, lịch sinh hoạt và mục tiêu hiện tại của bạn.
+          </p>
+          <div class="section-actions">
+            <a class="btn" href="#lien-he">Đăng ký tư vấn ngay</a>
+          </div>
+        </div>
+      </section>
+
+      <section id="lien-he" class="contact" aria-labelledby="contact-title">
+        <div class="container contact-grid">
+          <div class="contact-panel">
+            <p class="section-kicker">Liên hệ</p>
+            <h2 id="contact-title">Yoga Ngọc Thư</h2>
+            <p>
+              Gửi thông tin của bạn để được tư vấn lớp học phù hợp. Có thể bổ sung số điện thoại, Zalo hoặc địa chỉ studio vào phần này khi có dữ liệu chính thức.
+            </p>
+            <ul class="check-list">
+              <li>Tư vấn theo thể trạng và mục tiêu cá nhân.</li>
+              <li>Phù hợp cho phụ nữ văn phòng, mẹ sau sinh và người mới tập.</li>
+              <li>Ưu tiên sự an toàn, đều đặn và cảm giác thoải mái khi tập.</li>
+            </ul>
+          </div>
+          <form id="leadForm">
+            <div class="field-grid">
+              <label>
+                Họ và tên
+                <input name="name" autocomplete="name" placeholder="Nhập tên của bạn" required />
+              </label>
+              <label>
+                Số điện thoại
+                <input name="phone" autocomplete="tel" placeholder="Nhập số điện thoại" required />
+              </label>
+              <label>
+                Mục tiêu chính
+                <select name="goal" required>
+                  <option value="">Chọn mục tiêu</option>
+                  <option>Giảm đau mỏi, cải thiện tư thế</option>
+                  <option>Giữ dáng, săn chắc cơ thể</option>
+                  <option>Giảm stress, ngủ tốt hơn</option>
+                  <option>Bắt đầu tập yoga từ đầu</option>
+                </select>
+              </label>
+              <label>
+                Khung giờ tiện trao đổi
+                <input name="time" placeholder="Ví dụ: 19:00-21:00" />
+              </label>
+              <label class="full">
+                Ghi chú thêm
+                <textarea name="message" placeholder="Bạn có đau mỏi, chấn thương hoặc mục tiêu cụ thể nào muốn chia sẻ không?"></textarea>
+              </label>
+            </div>
+            <button class="btn" type="submit">Gửi thông tin tư vấn</button>
+            <p class="form-note" id="formNote" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">
+        <strong>Yoga Ngọc Thư</strong>
+        <span>Đánh thức năng lượng, cân bằng thân tâm</span>
+      </div>
+    </footer>
+
+    <script>
+      const form = document.querySelector("#leadForm");
+      const note = document.querySelector("#formNote");
+
+      form.addEventListener("submit", (event) => {
+        event.preventDefault();
+        const data = Object.fromEntries(new FormData(form).entries());
+        note.textContent = `Cảm ơn ${data.name || "bạn"}. Thông tin đã được ghi nhận trên trang demo.`;
+        form.reset();
+      });
+    </script>
+  </body>
+</html>
