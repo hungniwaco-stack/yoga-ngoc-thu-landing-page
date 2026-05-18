@@ -57,6 +57,7 @@ Các section hiện có:
 - File ảnh: `Anh/bang-hieu-luxury-yoga.png`
 - Nguồn ban đầu: `C:/Users/Admin/Downloads/01. Bảng hiệu - Phong cách Luxury Yoga Studio (sang trọng – thu hút) 2.png`
 - Vị trí hiển thị: section đầu trang, ngay dưới header
+- Ảnh bảng hiệu phải hiển thị đủ toàn bộ nội dung, dùng `height: auto` và `object-fit: contain`, không dùng `cover` để tránh cắt chữ “PHÒNG TẬP YOGA”.
 
 Đã thêm số tư vấn/liên hệ/Zalo:
 
