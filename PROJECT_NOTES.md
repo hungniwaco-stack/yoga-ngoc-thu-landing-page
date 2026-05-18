@@ -51,7 +51,7 @@ Các section hiện có:
 - `Anh/01.jpg`, `Anh/02.jpg`, `Anh/04.jpg`: gallery
 - `Anh/chan-dung.jpg`: ảnh chân dung nguồn, tên ASCII để dùng an toàn trên web/GitHub Pages
 - `Anh/chan-dung-logo.jpg`: logo tròn ở header, được crop từ `Anh/chan-dung.jpg`
-- Text thương hiệu ở header đang dùng chữ in hoa: `YOGA NGỌC THƯ`
+- Text thương hiệu ở header đang dùng chữ in hoa: `YOGA NGỌC THƯ`, có nền pill sáng, viền xanh nhẹ và đổ bóng để nổi bật hơn.
 
 ## Thay đổi sau cùng
 
