@@ -88,6 +88,17 @@ Phần liên hệ hiện chỉ còn card thông tin Yoga Ngọc Thư và các bu
 - Nhánh deploy: `main`
 - GitHub Pages source: branch `main`, path `/`
 
+## Vercel
+
+- Tài khoản Vercel CLI đã đăng nhập: `hungniwaco-8245`
+- Vercel team/scope: `hungs-projects-fdde2488`
+- Project Vercel: `landing-page-planner`
+- Repo GitHub đã được Vercel kết nối: `https://github.com/hungniwaco-stack/yoga-ngoc-thu-landing-page`
+- Dashboard/inspect: `https://vercel.com/hungs-projects-fdde2488/landing-page-planner`
+- Website Vercel production: `https://landing-page-planner.vercel.app`
+- Lệnh deploy production thủ công: `npx vercel --prod --yes`
+- `.vercel` được ignore trong Git; `.vercelignore` dùng để không upload file Word/thư mục phụ lên Vercel.
+
 ## Lưu ý lần sau
 
 - Không hỏi lại thông tin nền của dự án nếu chỉ cần chỉnh landing page hiện tại.
@@ -97,6 +108,7 @@ Phần liên hệ hiện chỉ còn card thông tin Yoga Ngọc Thư và các bu
   3. `git add index.html`
   4. `git commit -m "..."`
   5. `git push`
-  6. Chờ GitHub Pages build xong
+  6. Chờ GitHub Pages/Vercel build xong
+- Nếu cần deploy Vercel thủ công sau khi sửa local, chạy `npx vercel --prod --yes`.
 - Nếu trang online vẫn hiện bản cũ, dùng cache-busting như `?v=<commit>` hoặc refresh mạnh `Ctrl + F5`.
 - Không đưa file `.docx` lên GitHub vì đã được ignore.
