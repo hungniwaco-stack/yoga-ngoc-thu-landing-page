@@ -3,31 +3,31 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Yoga Ngọc Thư | Đánh thức năng lượng, cân bằng thân tâm</title>
+    <title>Trung Tâm Tiếng Trung Bảo Ân | Kết Nối Ngôn Ngữ - Mở Cửa Tương Lai</title>
     <meta
       name="description"
-      content="Lớp Yoga Ngọc Thư dành cho phụ nữ muốn cải thiện sức khỏe, giảm căng thẳng, giữ dáng nhẹ nhàng và xây dựng thói quen sống cân bằng."
+      content="Trung Tâm Đào Tạo Tiếng Trung Bảo Ân tại Phan Rang - Khánh Hòa. Khóa giao tiếp, luyện thi HSK, tiếng Trung cho người đi làm và trẻ em."
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800;900&display=swap"
       rel="stylesheet"
     />
     <style>
       :root {
-        --leaf: #2f6b4f;
-        --leaf-dark: #173d2e;
-        --mint: #dceee5;
-        --sage: #7fa28b;
-        --rose: #d8917c;
-        --rose-dark: #a65f4d;
-        --cream: #fbf8f1;
-        --paper: #fffdf8;
-        --ink: #1d2b25;
-        --muted: #66736d;
-        --line: rgba(47, 107, 79, 0.18);
-        --shadow: 0 24px 70px rgba(23, 61, 46, 0.12);
+        --red: #b72126;
+        --red-dark: #7e1519;
+        --gold: #f3b73f;
+        --gold-soft: #fff1c8;
+        --jade: #116356;
+        --ink: #211b17;
+        --muted: #6f625c;
+        --paper: #fffaf0;
+        --cream: #f8efe1;
+        --white: #ffffff;
+        --line: rgba(126, 21, 25, 0.16);
+        --shadow: 0 24px 70px rgba(64, 24, 16, 0.16);
         --radius: 8px;
       }
 
@@ -43,7 +43,7 @@
         margin: 0;
         font-family: "Be Vietnam Pro", Arial, sans-serif;
         color: var(--ink);
-        background: var(--cream);
+        background: var(--paper);
         line-height: 1.6;
       }
 
@@ -58,21 +58,21 @@
       }
 
       .container {
-        width: min(1120px, calc(100% - 40px));
+        width: min(1160px, calc(100% - 40px));
         margin: 0 auto;
       }
 
       .site-header {
         position: sticky;
         top: 0;
-        z-index: 20;
-        background: rgba(251, 248, 241, 0.92);
-        border-bottom: 1px solid var(--line);
+        z-index: 30;
+        border-bottom: 1px solid rgba(183, 33, 38, 0.12);
+        background: rgba(255, 250, 240, 0.92);
         backdrop-filter: blur(16px);
       }
 
       .nav {
-        min-height: 72px;
+        min-height: 76px;
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -80,120 +80,117 @@
       }
 
       .brand {
-        display: flex;
-        align-items: center;
-        gap: 12px;
-        font-weight: 800;
-        color: var(--leaf-dark);
-      }
-
-      .brand span:last-child {
         display: inline-flex;
         align-items: center;
-        min-height: 34px;
-        padding: 0 14px;
-        border: 1px solid rgba(47, 107, 79, 0.22);
-        border-radius: 999px;
-        background: linear-gradient(135deg, rgba(255, 253, 248, 0.96), rgba(220, 238, 229, 0.72));
-        box-shadow: 0 10px 24px rgba(23, 61, 46, 0.12);
-        color: var(--leaf-dark);
-        font-size: 16px;
-        font-weight: 900;
-        letter-spacing: 0.03em;
-        text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8);
-        white-space: nowrap;
+        gap: 12px;
+        min-width: 0;
       }
 
       .brand-mark {
-        width: 42px;
-        height: 42px;
-        border-radius: 50%;
+        width: 52px;
+        height: 52px;
+        flex: 0 0 52px;
         overflow: hidden;
-        border: 2px solid var(--leaf);
-        background: var(--leaf);
-        box-shadow: 0 8px 18px rgba(23, 61, 46, 0.16);
+        border-radius: 50%;
+        background: var(--white);
+        border: 2px solid rgba(183, 33, 38, 0.18);
+        box-shadow: 0 10px 24px rgba(183, 33, 38, 0.16);
       }
 
       .brand-mark img {
         width: 100%;
         height: 100%;
         object-fit: cover;
-        object-position: 52% 35%;
+      }
+
+      .brand-copy {
+        display: grid;
+        gap: 2px;
+      }
+
+      .brand-copy strong {
+        color: var(--red-dark);
+        font-size: 17px;
+        font-weight: 900;
+        line-height: 1.15;
+      }
+
+      .brand-copy span {
+        color: var(--muted);
+        font-size: 12px;
+        font-weight: 700;
       }
 
       .nav-links {
         display: flex;
         align-items: center;
-        gap: 26px;
-        color: var(--muted);
+        gap: 24px;
+        color: #5f514b;
         font-size: 14px;
-        font-weight: 600;
+        font-weight: 700;
       }
 
       .nav-links a:hover {
-        color: var(--leaf-dark);
+        color: var(--red);
       }
 
       .btn {
-        min-height: 46px;
+        min-height: 48px;
         display: inline-flex;
         align-items: center;
         justify-content: center;
         gap: 10px;
         padding: 0 22px;
-        border: 0;
+        border: 1px solid transparent;
         border-radius: var(--radius);
-        background: var(--leaf);
-        color: white;
+        background: var(--red);
+        color: var(--white);
         font: inherit;
         font-weight: 800;
         cursor: pointer;
-        box-shadow: 0 12px 28px rgba(47, 107, 79, 0.24);
-        transition:
-          transform 0.2s ease,
-          background 0.2s ease,
-          box-shadow 0.2s ease;
+        box-shadow: 0 14px 32px rgba(183, 33, 38, 0.25);
+        transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
       }
 
       .btn:hover {
         transform: translateY(-2px);
-        background: var(--leaf-dark);
-        box-shadow: 0 16px 34px rgba(47, 107, 79, 0.3);
+        background: var(--red-dark);
+        box-shadow: 0 18px 40px rgba(183, 33, 38, 0.3);
       }
 
       .btn.secondary {
-        background: var(--paper);
-        color: var(--leaf-dark);
-        border: 1px solid var(--line);
+        background: rgba(255, 255, 255, 0.88);
+        color: var(--red-dark);
+        border-color: rgba(183, 33, 38, 0.18);
         box-shadow: none;
       }
 
       .hero {
-        min-height: calc(100vh - 72px);
+        min-height: calc(100vh - 76px);
         display: grid;
-        align-items: center;
-        padding: 74px 0 56px;
+        align-items: end;
+        padding: 92px 0 42px;
         background:
-          linear-gradient(90deg, rgba(251, 248, 241, 0.98) 0%, rgba(251, 248, 241, 0.82) 46%, rgba(251, 248, 241, 0.2) 100%),
-          url("Anh/05.jpg") center right / cover;
+          linear-gradient(90deg, rgba(39, 18, 13, 0.84) 0%, rgba(92, 22, 22, 0.7) 42%, rgba(92, 22, 22, 0.12) 100%),
+          url("assets/bao-an/banner.png") center right / cover;
+        color: var(--white);
       }
 
-      .hero-grid {
-        display: grid;
-        grid-template-columns: minmax(0, 1.02fr) minmax(280px, 0.78fr);
-        gap: 48px;
-        align-items: center;
+      .hero-content {
+        max-width: 790px;
+        padding-bottom: 28px;
       }
 
       .eyebrow {
         display: inline-flex;
         align-items: center;
-        gap: 8px;
+        gap: 10px;
+        margin-bottom: 20px;
         padding: 8px 12px;
-        border: 1px solid var(--line);
+        border: 1px solid rgba(255, 255, 255, 0.28);
         border-radius: 999px;
-        background: rgba(255, 253, 248, 0.76);
-        color: var(--leaf-dark);
+        background: rgba(255, 255, 255, 0.12);
+        color: #ffe7a6;
         font-size: 13px;
         font-weight: 800;
       }
@@ -206,33 +203,32 @@
       }
 
       h1 {
-        max-width: 760px;
         margin-bottom: 22px;
+        color: var(--white);
         font-size: clamp(42px, 7vw, 82px);
-        line-height: 1.02;
+        line-height: 1.03;
         letter-spacing: 0;
-        color: var(--leaf-dark);
       }
 
       h2 {
-        max-width: 780px;
+        max-width: 860px;
         margin-bottom: 16px;
+        color: var(--red-dark);
         font-size: clamp(30px, 4vw, 52px);
         line-height: 1.12;
         letter-spacing: 0;
-        color: var(--leaf-dark);
       }
 
       h3 {
         margin-bottom: 10px;
+        color: var(--red-dark);
         font-size: 20px;
         line-height: 1.25;
-        color: var(--leaf-dark);
       }
 
       .lead {
-        max-width: 680px;
-        color: #45544d;
+        max-width: 720px;
+        color: rgba(255, 255, 255, 0.88);
         font-size: clamp(17px, 2vw, 21px);
       }
 
@@ -244,74 +240,35 @@
         margin-top: 30px;
       }
 
-      .trust-row {
+      .hero-strip {
         display: grid;
-        grid-template-columns: repeat(3, minmax(0, 1fr));
+        grid-template-columns: repeat(4, minmax(0, 1fr));
         gap: 14px;
-        margin-top: 38px;
-        max-width: 660px;
+        margin-top: 24px;
       }
 
-      .trust-item {
+      .metric {
+        min-height: 104px;
         padding: 18px;
-        border: 1px solid var(--line);
+        border: 1px solid rgba(255, 255, 255, 0.18);
         border-radius: var(--radius);
-        background: rgba(255, 253, 248, 0.78);
+        background: rgba(255, 255, 255, 0.88);
+        color: var(--ink);
       }
 
-      .trust-item strong {
+      .metric strong {
         display: block;
-        color: var(--leaf-dark);
+        color: var(--red-dark);
+        font-size: 23px;
+        line-height: 1.15;
       }
 
-      .trust-item span {
+      .metric span {
+        display: block;
+        margin-top: 6px;
         color: var(--muted);
         font-size: 13px;
-      }
-
-      .hero-card {
-        align-self: end;
-        padding: 22px;
-        border: 1px solid rgba(255, 255, 255, 0.54);
-        border-radius: var(--radius);
-        background: rgba(255, 253, 248, 0.78);
-        box-shadow: var(--shadow);
-        backdrop-filter: blur(18px);
-      }
-
-      .hero-card img {
-        width: 100%;
-        aspect-ratio: 4 / 5;
-        object-fit: cover;
-        border-radius: var(--radius);
-      }
-
-      .mini-note {
-        margin: 18px 0 0;
-        color: var(--muted);
-        font-size: 14px;
-      }
-
-      .top-signage {
-        padding: 26px 0 0;
-        background: var(--cream);
-      }
-
-      .signage-card {
-        overflow: hidden;
-        margin: 0;
-        border: 1px solid rgba(255, 255, 255, 0.7);
-        border-radius: var(--radius);
-        background: var(--paper);
-        box-shadow: var(--shadow);
-      }
-
-      .signage-card img {
-        width: 100%;
-        height: auto;
-        max-height: none;
-        object-fit: contain;
-        object-position: center;
+        font-weight: 700;
       }
 
       section {
@@ -320,32 +277,41 @@
 
       .section-kicker {
         margin-bottom: 10px;
-        color: var(--rose-dark);
+        color: var(--jade);
         font-size: 13px;
-        font-weight: 800;
-        letter-spacing: 0.06em;
+        font-weight: 900;
+        letter-spacing: 0.08em;
         text-transform: uppercase;
       }
 
       .section-intro {
-        max-width: 680px;
+        max-width: 760px;
         margin-bottom: 34px;
         color: var(--muted);
         font-size: 18px;
       }
 
-      .pain {
-        background: var(--paper);
+      .problem {
+        background:
+          linear-gradient(180deg, rgba(255, 241, 200, 0.5), rgba(255, 250, 240, 0.95)),
+          var(--paper);
       }
 
-      .pain-grid,
-      .benefit-grid,
-      .program-grid,
-      .proof-grid,
+      .grid-3,
+      .grid-4,
+      .course-grid,
       .faq-grid {
         display: grid;
-        grid-template-columns: repeat(3, minmax(0, 1fr));
         gap: 18px;
+      }
+
+      .grid-3 {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+      }
+
+      .grid-4,
+      .course-grid {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
       }
 
       .card {
@@ -353,60 +319,78 @@
         padding: 26px;
         border: 1px solid var(--line);
         border-radius: var(--radius);
-        background: var(--paper);
+        background: rgba(255, 255, 255, 0.76);
+        box-shadow: 0 14px 34px rgba(64, 24, 16, 0.06);
       }
 
-      .pain .card {
-        background: var(--cream);
-      }
-
-      .icon {
+      .number {
         width: 42px;
         height: 42px;
         display: grid;
         place-items: center;
         margin-bottom: 18px;
         border-radius: 50%;
-        background: var(--mint);
-        color: var(--leaf-dark);
-        font-size: 20px;
+        background: var(--gold-soft);
+        color: var(--red-dark);
+        font-size: 14px;
+        font-weight: 900;
+      }
+
+      .card p {
+        margin-bottom: 0;
+        color: var(--muted);
       }
 
       .bridge {
         margin-top: 30px;
         padding: 26px;
-        border-left: 5px solid var(--rose);
-        background: #fff7f1;
-        color: var(--leaf-dark);
+        border-left: 5px solid var(--gold);
+        border-radius: 0 var(--radius) var(--radius) 0;
+        background: var(--white);
+        color: var(--red-dark);
         font-size: 20px;
-        font-weight: 700;
+        font-weight: 800;
+        box-shadow: 0 14px 34px rgba(64, 24, 16, 0.08);
       }
 
       .split {
         display: grid;
-        grid-template-columns: minmax(0, 0.92fr) minmax(300px, 1.08fr);
-        gap: 54px;
+        grid-template-columns: minmax(300px, 0.9fr) minmax(0, 1.1fr);
+        gap: 56px;
         align-items: center;
       }
 
-      .image-panel {
-        overflow: hidden;
+      .identity-panel {
+        position: relative;
+        padding: 28px;
+        border: 1px solid var(--line);
         border-radius: var(--radius);
+        background:
+          linear-gradient(135deg, rgba(255, 241, 200, 0.8), rgba(255, 255, 255, 0.9)),
+          var(--white);
         box-shadow: var(--shadow);
       }
 
-      .image-panel img {
-        width: 100%;
-        aspect-ratio: 5 / 4;
-        object-fit: cover;
+      .identity-panel img {
+        width: min(380px, 100%);
+        margin: 0 auto;
+        border-radius: 50%;
       }
 
-      .benefit-grid {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-      }
-
-      .benefit-grid .card {
-        background: rgba(255, 253, 248, 0.78);
+      .seal {
+        position: absolute;
+        right: 22px;
+        bottom: 22px;
+        width: 112px;
+        height: 112px;
+        display: grid;
+        place-items: center;
+        border-radius: 50%;
+        background: var(--red);
+        color: var(--gold-soft);
+        font-size: 48px;
+        font-weight: 900;
+        box-shadow: 0 16px 36px rgba(183, 33, 38, 0.26);
       }
 
       .check-list {
@@ -419,33 +403,91 @@
 
       .check-list li {
         display: grid;
-        grid-template-columns: 28px 1fr;
+        grid-template-columns: 30px 1fr;
         gap: 10px;
-        color: #415149;
+        color: #4b403b;
       }
 
       .check-list li::before {
-        content: "✓";
-        width: 28px;
-        height: 28px;
+        content: "";
+        width: 30px;
+        height: 30px;
         display: grid;
         place-items: center;
         border-radius: 50%;
-        background: var(--mint);
-        color: var(--leaf-dark);
-        font-weight: 800;
+        background: var(--gold-soft);
+        color: var(--red-dark);
+        font-weight: 900;
       }
 
-      .program {
+      .check-list li::after {
+        content: "✓";
+        grid-column: 1;
+        grid-row: 1;
+        display: grid;
+        place-items: center;
+        width: 30px;
+        height: 30px;
+        color: var(--red-dark);
+        font-weight: 900;
+      }
+
+      .why {
+        background: var(--white);
+      }
+
+      .why .card {
         background: var(--paper);
       }
 
-      .program-grid {
-        grid-template-columns: 0.85fr 1.15fr;
+      .why .grid-3 {
+        grid-template-columns: 1fr;
+      }
+
+      .courses {
+        background:
+          linear-gradient(180deg, rgba(126, 21, 25, 0.94), rgba(92, 19, 24, 0.95)),
+          var(--red-dark);
+        color: var(--white);
+      }
+
+      .courses h2,
+      .courses h3,
+      .courses .section-kicker {
+        color: var(--white);
+      }
+
+      .courses .section-intro,
+      .courses p {
+        color: rgba(255, 255, 255, 0.8);
+      }
+
+      .course-card {
+        min-height: 100%;
+        padding: 26px;
+        border: 1px solid rgba(255, 255, 255, 0.16);
+        border-radius: var(--radius);
+        background: rgba(255, 255, 255, 0.08);
+      }
+
+      .course-tag {
+        display: inline-flex;
+        min-height: 34px;
+        align-items: center;
+        margin-bottom: 18px;
+        padding: 0 12px;
+        border-radius: 999px;
+        background: rgba(243, 183, 63, 0.16);
+        color: #ffe2a0;
+        font-size: 13px;
+        font-weight: 900;
+      }
+
+      .timeline {
+        background: var(--cream);
       }
 
       .steps {
-        counter-reset: step;
         display: grid;
         gap: 16px;
       }
@@ -453,240 +495,151 @@
       .step {
         counter-increment: step;
         display: grid;
-        grid-template-columns: 52px 1fr;
-        gap: 16px;
-        padding: 20px;
+        grid-template-columns: 64px 1fr;
+        gap: 18px;
+        padding: 22px;
         border: 1px solid var(--line);
         border-radius: var(--radius);
-        background: var(--cream);
+        background: var(--white);
+      }
+
+      .steps {
+        counter-reset: step;
       }
 
       .step::before {
         content: counter(step, decimal-leading-zero);
+        width: 64px;
+        height: 64px;
         display: grid;
         place-items: center;
-        width: 52px;
-        height: 52px;
-        border-radius: 50%;
-        background: var(--leaf);
-        color: white;
-        font-weight: 800;
+        border-radius: var(--radius);
+        background: var(--red);
+        color: var(--white);
+        font-size: 20px;
+        font-weight: 900;
       }
 
-      .outcomes {
-        background: linear-gradient(135deg, var(--leaf-dark), #2f6b4f);
-        color: white;
-      }
-
-      .outcomes h2,
-      .outcomes h3,
-      .outcomes .section-kicker {
-        color: white;
-      }
-
-      .outcomes .section-intro,
-      .outcomes p {
-        color: rgba(255, 255, 255, 0.8);
-      }
-
-      .outcomes .card {
-        border-color: rgba(255, 255, 255, 0.16);
-        background: rgba(255, 255, 255, 0.08);
-      }
-
-      .proof-grid {
-        grid-template-columns: 1fr 1fr;
-      }
-
-      .gallery {
-        background: var(--paper);
-      }
-
-      .gallery-grid {
+      .audience-grid {
         display: grid;
-        grid-template-columns: 1.15fr 0.85fr 0.85fr;
-        grid-auto-rows: 230px;
-        gap: 14px;
+        grid-template-columns: 0.9fr 1.1fr;
+        gap: 34px;
+        align-items: stretch;
       }
 
-      .gallery-item {
-        position: relative;
-        overflow: hidden;
+      .audience-banner {
+        min-height: 100%;
+        display: grid;
+        align-content: end;
+        padding: 34px;
         border-radius: var(--radius);
-        background: var(--mint);
-        box-shadow: 0 16px 42px rgba(23, 61, 46, 0.1);
+        background:
+          linear-gradient(180deg, rgba(33, 27, 23, 0.08), rgba(33, 27, 23, 0.82)),
+          url("assets/bao-an/banner.png") center / cover;
+        color: var(--white);
+        box-shadow: var(--shadow);
       }
 
-      .gallery-item.large {
-        grid-row: span 2;
+      .audience-banner h2 {
+        color: var(--white);
       }
 
-      .gallery-item img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-      }
-
-      .gallery-item::after {
-        content: "";
-        position: absolute;
-        inset: 0;
-        background: linear-gradient(180deg, rgba(23, 61, 46, 0), rgba(23, 61, 46, 0.12));
-        pointer-events: none;
-      }
-
-      .quote {
-        position: relative;
-        padding: 30px;
-        border-radius: var(--radius);
-        background: var(--paper);
-        border: 1px solid var(--line);
-      }
-
-      .quote::before {
-        content: "“";
-        position: absolute;
-        top: -18px;
-        left: 20px;
-        color: var(--rose);
-        font-size: 76px;
-        line-height: 1;
-        font-weight: 800;
-      }
-
-      .quote p {
-        margin: 16px 0 18px;
-        color: #3f4f47;
-      }
-
-      .quote strong {
-        color: var(--leaf-dark);
+      .audience-banner p {
+        color: rgba(255, 255, 255, 0.86);
       }
 
       .offer {
-        background: var(--paper);
+        background: var(--white);
       }
 
       .offer-box {
         display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 32px;
+        grid-template-columns: 1.08fr 0.92fr;
+        gap: 30px;
         align-items: center;
-        padding: 38px;
-        border: 1px solid var(--line);
+        padding: 40px;
         border-radius: var(--radius);
-        background: var(--cream);
+        background:
+          linear-gradient(135deg, rgba(255, 241, 200, 0.9), rgba(255, 255, 255, 0.9)),
+          var(--paper);
+        border: 1px solid var(--line);
         box-shadow: var(--shadow);
       }
 
-      .price-note {
-        padding: 22px;
-        border-radius: var(--radius);
-        background: var(--paper);
-        border: 1px solid var(--line);
-      }
-
-      .price-note strong {
-        display: block;
-        margin-bottom: 8px;
-        color: var(--leaf-dark);
-        font-size: 22px;
-      }
-
-      .contact-lines {
+      .bonus-list {
         display: grid;
         gap: 12px;
-        margin: 22px 0 0;
+        margin: 0;
+        padding: 0;
+        list-style: none;
       }
 
-      .contact-line {
-        display: flex;
-        align-items: center;
-        gap: 12px;
-        color: var(--leaf-dark);
-        font-weight: 800;
-      }
-
-      .contact-line span:first-child {
-        width: 34px;
-        height: 34px;
-        flex: 0 0 34px;
-        display: grid;
-        place-items: center;
-        border-radius: 50%;
-        background: var(--mint);
-      }
-
-      .faq-grid {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-      }
-
-      details {
-        padding: 22px;
-        border: 1px solid var(--line);
+      .bonus-list li {
+        padding: 16px 18px;
         border-radius: var(--radius);
-        background: var(--paper);
-      }
-
-      summary {
-        color: var(--leaf-dark);
+        background: var(--white);
+        color: var(--red-dark);
         font-weight: 800;
-        cursor: pointer;
-      }
-
-      details p {
-        margin: 14px 0 0;
-        color: var(--muted);
-      }
-
-      .final-cta {
-        padding: 86px 0;
-        background:
-          linear-gradient(90deg, rgba(23, 61, 46, 0.9), rgba(47, 107, 79, 0.72)),
-          url("Anh/05.jpg") center / cover;
-        color: white;
-      }
-
-      .final-cta h2,
-      .final-cta p {
-        color: white;
-      }
-
-      .final-cta .btn {
-        background: var(--rose);
-        color: var(--leaf-dark);
       }
 
       .contact {
-        background: var(--paper);
+        background:
+          linear-gradient(90deg, rgba(33, 27, 23, 0.9), rgba(126, 21, 25, 0.78)),
+          url("assets/bao-an/banner.png") center / cover;
+        color: var(--white);
+      }
+
+      .contact h2,
+      .contact .section-kicker {
+        color: var(--white);
+      }
+
+      .contact .section-intro,
+      .contact p {
+        color: rgba(255, 255, 255, 0.82);
       }
 
       .contact-grid {
         display: grid;
-        grid-template-columns: 1fr;
-        gap: 28px;
-        max-width: 760px;
-        margin: 0 auto;
+        grid-template-columns: minmax(0, 0.9fr) minmax(320px, 0.72fr);
+        gap: 34px;
+        align-items: start;
       }
 
       .contact-panel,
-      form {
-        padding: 28px;
-        border: 1px solid var(--line);
+      .form-panel {
+        padding: 30px;
+        border: 1px solid rgba(255, 255, 255, 0.2);
         border-radius: var(--radius);
-        background: var(--cream);
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(14px);
       }
 
-      .field-grid {
+      .contact-line {
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 44px 1fr;
         gap: 14px;
+        align-items: center;
+        margin-top: 14px;
+        color: var(--white);
+        font-weight: 800;
+      }
+
+      .contact-line span:first-child {
+        width: 44px;
+        height: 44px;
+        display: grid;
+        place-items: center;
+        border-radius: 50%;
+        background: var(--gold);
+        color: var(--red-dark);
       }
 
       label {
         display: grid;
         gap: 8px;
-        color: var(--leaf-dark);
+        margin-bottom: 14px;
+        color: var(--white);
         font-size: 14px;
         font-weight: 700;
       }
@@ -697,33 +650,55 @@
         width: 100%;
         min-height: 48px;
         padding: 12px 14px;
-        border: 1px solid var(--line);
+        border: 1px solid rgba(255, 255, 255, 0.22);
         border-radius: var(--radius);
-        background: var(--paper);
+        background: rgba(255, 255, 255, 0.92);
         color: var(--ink);
         font: inherit;
       }
 
       textarea {
-        min-height: 116px;
+        min-height: 112px;
         resize: vertical;
       }
 
-      .full {
-        grid-column: 1 / -1;
+      .form-note {
+        margin: 12px 0 0;
+        color: rgba(255, 255, 255, 0.72);
+        font-size: 13px;
       }
 
-      .form-note {
-        min-height: 24px;
+      .form-note.success {
+        color: var(--gold-soft);
+        font-weight: 800;
+      }
+
+      .faq-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      details {
+        padding: 22px;
+        border: 1px solid var(--line);
+        border-radius: var(--radius);
+        background: var(--white);
+      }
+
+      summary {
+        color: var(--red-dark);
+        font-weight: 900;
+        cursor: pointer;
+      }
+
+      details p {
         margin: 14px 0 0;
-        color: var(--leaf-dark);
-        font-weight: 700;
+        color: var(--muted);
       }
 
       footer {
-        padding: 34px 0;
-        background: var(--leaf-dark);
-        color: rgba(255, 255, 255, 0.76);
+        padding: 32px 0;
+        background: #211b17;
+        color: rgba(255, 255, 255, 0.72);
       }
 
       footer .container {
@@ -734,108 +709,104 @@
       }
 
       footer strong {
-        color: white;
+        color: var(--white);
       }
 
-      @media (max-width: 900px) {
+      @media (max-width: 980px) {
         .nav-links {
           display: none;
         }
 
         .hero {
           min-height: auto;
-          padding: 56px 0;
+          padding: 78px 0 34px;
           background:
-            linear-gradient(180deg, rgba(251, 248, 241, 0.96), rgba(251, 248, 241, 0.88)),
-            url("Anh/05.jpg") center / cover;
+            linear-gradient(180deg, rgba(39, 18, 13, 0.9), rgba(92, 22, 22, 0.58)),
+            url("assets/bao-an/banner.png") center / cover;
         }
 
-        .hero-grid,
+        .hero-strip,
+        .grid-3,
+        .grid-4,
+        .course-grid,
         .split,
-        .program-grid,
+        .audience-grid,
         .offer-box,
-        .contact-grid {
-          grid-template-columns: 1fr;
-        }
-
-        .trust-row,
-        .pain-grid,
-        .benefit-grid,
-        .proof-grid,
-        .gallery-grid,
+        .contact-grid,
         .faq-grid {
           grid-template-columns: 1fr;
         }
 
-        .gallery-grid {
-          grid-auto-rows: 260px;
-        }
-
-        .gallery-item.large {
-          grid-row: span 1;
+        .course-grid,
+        .grid-4 {
+          grid-template-columns: repeat(2, minmax(0, 1fr));
         }
 
         section {
-          padding: 70px 0;
-        }
-
-        .hero-card {
-          max-width: 420px;
+          padding: 72px 0;
         }
       }
 
-      @media (max-width: 620px) {
+      @media (max-width: 640px) {
         .container {
-          width: min(100% - 28px, 1120px);
+          width: min(100% - 28px, 1160px);
         }
 
         .nav {
-          min-height: 64px;
-          gap: 10px;
+          min-height: 68px;
         }
 
         .brand-mark {
-          width: 38px;
-          height: 38px;
+          width: 44px;
+          height: 44px;
+          flex-basis: 44px;
         }
 
-        .brand span:last-child {
+        .brand-copy span {
           display: none;
+        }
+
+        .nav .btn {
+          min-height: 42px;
+          padding: 0 14px;
+          font-size: 13px;
         }
 
         .hero-actions,
         .section-actions,
         footer .container {
-          align-items: stretch;
           flex-direction: column;
+          align-items: stretch;
         }
 
         .hero-actions .btn,
         .section-actions .btn,
-        form .btn {
+        .form-panel .btn {
           width: 100%;
         }
 
-        .nav .btn {
-          width: auto;
-          min-height: 44px;
-          padding: 0 16px;
-          font-size: 14px;
+        .course-grid,
+        .grid-4 {
+          grid-template-columns: 1fr;
         }
 
         .card,
         .offer-box,
         .contact-panel,
-        form {
+        .form-panel,
+        .identity-panel,
+        .audience-banner {
           padding: 22px;
-        }
-
-        .field-grid {
-          grid-template-columns: 1fr;
         }
 
         .step {
           grid-template-columns: 1fr;
+        }
+
+        .seal {
+          width: 86px;
+          height: 86px;
+          font-size: 38px;
         }
       }
     </style>
@@ -843,14 +814,18 @@
   <body>
     <header class="site-header">
       <div class="container nav">
-        <a class="brand" href="#top" aria-label="Yoga Ngọc Thư">
+        <a class="brand" href="#top" aria-label="Trung Tâm Tiếng Trung Bảo Ân">
           <span class="brand-mark">
-            <img src="Anh/chan-dung-logo.jpg" alt="Chân dung Yoga Ngọc Thư" />
+            <img src="assets/bao-an/logo.png" alt="Logo Trung Tâm Tiếng Trung Bảo Ân" />
           </span>
-          <span>YOGA NGỌC THƯ</span>
+          <span class="brand-copy">
+            <strong>BẢO ÂN</strong>
+            <span>Trung tâm đào tạo tiếng Trung</span>
+          </span>
         </a>
         <nav class="nav-links" aria-label="Điều hướng chính">
           <a href="#loi-ich">Lợi ích</a>
+          <a href="#khoa-hoc">Khóa học</a>
           <a href="#lo-trinh">Lộ trình</a>
           <a href="#faq">FAQ</a>
           <a href="#lien-he">Liên hệ</a>
@@ -860,215 +835,218 @@
     </header>
 
     <main id="top">
-      <section class="top-signage" aria-label="Bảng hiệu Yoga Ngọc Thư">
-        <div class="container">
-          <figure class="signage-card" aria-label="Bảng hiệu Yoga Ngọc Thư">
-            <img
-              src="Anh/bang-hieu-luxury-yoga.png"
-              alt="Bảng hiệu phòng tập Yoga Ngọc Thư với số điện thoại 0918 890 212"
-            />
-          </figure>
-        </div>
-      </section>
-
       <section class="hero" aria-labelledby="hero-title">
-        <div class="container hero-grid">
-          <div>
-            <span class="eyebrow">Yoga cho phụ nữ muốn khỏe đẹp và cân bằng hơn</span>
-            <h1 id="hero-title">Đánh thức năng lượng, cân bằng thân tâm</h1>
-            <p class="lead">
-              Lớp Yoga Ngọc Thư đồng hành cùng bạn cải thiện sự dẻo dai, giải tỏa căng thẳng và xây dựng thói quen chăm sóc bản thân nhẹ nhàng, bền vững.
-            </p>
-            <div class="contact-lines" aria-label="Số tư vấn nhanh">
-              <a class="contact-line" href="tel:0918890212">
-                <span>ĐT</span>
-                <span>Tư vấn: 0918 890 212</span>
-              </a>
-              <a class="contact-line" href="https://zalo.me/0918890212">
-                <span>Z</span>
-                <span>Zalo: 0918 890 212</span>
-              </a>
-            </div>
-            <div class="hero-actions">
-              <a class="btn" href="#lien-he">Nhận tư vấn lớp phù hợp</a>
-              <a class="btn secondary" href="#lo-trinh">Xem lộ trình tập</a>
-            </div>
-            <div class="trust-row" aria-label="Điểm nổi bật">
-              <div class="trust-item">
-                <strong>Cho người mới</strong>
-                <span>Dễ bắt đầu, có hướng dẫn sát sao</span>
-              </div>
-              <div class="trust-item">
-                <strong>Cá nhân hóa</strong>
-                <span>Theo thể trạng và mục tiêu riêng</span>
-              </div>
-              <div class="trust-item">
-                <strong>Nhẹ mà sâu</strong>
-                <span>Kết hợp thở, thiền và yoga trị liệu</span>
-              </div>
-            </div>
-          </div>
-          <aside class="hero-card" aria-label="Không gian tập luyện">
-            <img
-              src="Anh/00.jpg"
-              alt="Học viên Yoga Ngọc Thư thực hiện động tác đứng cân bằng"
-            />
-            <p class="mini-note">Không gian yên tĩnh, tận tâm chỉnh từng động tác để bạn tập đúng và cảm thấy an toàn hơn.</p>
-          </aside>
-        </div>
-      </section>
-
-      <section class="pain" aria-labelledby="pain-title">
         <div class="container">
-          <p class="section-kicker">Bạn có đang gặp những điều này?</p>
-          <h2 id="pain-title">Cơ thể mỏi mệt không chỉ vì thiếu vận động, mà còn vì bạn đã bỏ quên chính mình quá lâu.</h2>
-          <p class="section-intro">
-            Yoga Ngọc Thư được thiết kế cho những người bận rộn, ít vận động hoặc đang cần một cách tập nhẹ nhàng hơn để quay lại với cơ thể.
-          </p>
-          <div class="pain-grid">
-            <article class="card">
-              <div class="icon">01</div>
-              <h3>Đau lưng, mỏi cổ vai gáy</h3>
-              <p>Bạn ngồi nhiều, làm việc máy tính liên tục và thường thấy cơ thể cứng, nặng nề, khó thư giãn.</p>
-            </article>
-            <article class="card">
-              <div class="icon">02</div>
-              <h3>Stress, mất ngủ, thiếu năng lượng</h3>
-              <p>Áp lực công việc và cuộc sống khiến bạn dễ căng thẳng, ngủ không sâu và bắt đầu ngày mới trong trạng thái uể oải.</p>
-            </article>
-            <article class="card">
-              <div class="icon">03</div>
-              <h3>Muốn giữ dáng nhưng ngại tập nặng</h3>
-              <p>Bạn muốn cơ thể săn chắc, tự tin hơn nhưng không phù hợp với những bài tập cường độ cao hoặc quá áp lực.</p>
-            </article>
+          <div class="hero-content">
+            <span class="eyebrow">Kết Nối Ngôn Ngữ - Mở Cửa Tương Lai</span>
+            <h1 id="hero-title">Học tiếng Trung dễ hơn bạn nghĩ</h1>
+            <p class="lead">
+              Giao tiếp tự tin, luyện thi HSK hiệu quả và mở rộng cơ hội học tập, công việc cùng
+              Trung Tâm Đào Tạo Tiếng Trung Bảo Ân tại Phan Rang - Khánh Hòa.
+            </p>
+            <div class="hero-actions">
+              <a class="btn" href="#lien-he">Đăng ký học thử miễn phí</a>
+              <a class="btn secondary" href="#khoa-hoc">Xem khóa học</a>
+            </div>
           </div>
-          <div class="bridge">Nếu bạn thấy mình trong những điều trên, bạn không cần ép bản thân thay đổi thật nhanh. Bạn chỉ cần bắt đầu đúng cách và duy trì đều đặn.</div>
+          <div class="hero-strip" aria-label="Điểm nổi bật">
+            <div class="metric">
+              <strong>HSK 1-6</strong>
+              <span>Lộ trình luyện thi rõ ràng</span>
+            </div>
+            <div class="metric">
+              <strong>Ít học viên</strong>
+              <span>Giáo viên sát sao từng người</span>
+            </div>
+            <div class="metric">
+              <strong>Học thử</strong>
+              <span>Miễn phí trước khi đăng ký</span>
+            </div>
+            <div class="metric">
+              <strong>Thực tế</strong>
+              <span>Giao tiếp ứng dụng mỗi buổi</span>
+            </div>
+          </div>
         </div>
       </section>
 
-      <section id="loi-ich" aria-labelledby="benefit-title">
+      <section class="problem" aria-labelledby="problem-title">
+        <div class="container">
+          <p class="section-kicker">Bạn đang gặp khó khăn khi học tiếng Trung?</p>
+          <h2 id="problem-title">Không phải bạn không có năng khiếu, có thể bạn chỉ đang thiếu đúng phương pháp và môi trường luyện tập.</h2>
+          <p class="section-intro">
+            Bảo Ân xây dựng lớp học giúp người mới bắt đầu, học sinh, sinh viên và người đi làm tiếp cận
+            tiếng Trung theo cách dễ hiểu, dễ nhớ và có thể ứng dụng ngay từ những buổi đầu tiên.
+          </p>
+          <div class="grid-3">
+            <article class="card">
+              <div class="number">01</div>
+              <h3>Học mãi nhưng chưa giao tiếp được</h3>
+              <p>Thiếu môi trường luyện nói khiến phát âm, phản xạ và sự tự tin tiến bộ chậm.</p>
+            </article>
+            <article class="card">
+              <div class="number">02</div>
+              <h3>Khó nhớ từ vựng và chữ Hán</h3>
+              <p>Học rời rạc làm bạn dễ quên, khó kết nối từ mới với tình huống thực tế.</p>
+            </article>
+            <article class="card">
+              <div class="number">03</div>
+              <h3>Ôn thi HSK chưa đúng trọng tâm</h3>
+              <p>Không có lộ trình rõ ràng khiến việc luyện đề, ngữ pháp và từ vựng thiếu hiệu quả.</p>
+            </article>
+          </div>
+          <div class="bridge">
+            Bảo Ân giúp bạn học dễ hiểu - nhớ lâu - ứng dụng thực tế, để mỗi buổi học đều có cảm giác tiến bộ rõ ràng.
+          </div>
+        </div>
+      </section>
+
+      <section id="loi-ich" class="why" aria-labelledby="why-title">
         <div class="container split">
-          <div class="image-panel">
-            <img
-              src="Anh/03.jpg"
-              alt="Học viên Yoga Ngọc Thư thực hành động tác nâng chân trên thảm"
-            />
+          <div class="identity-panel">
+            <img src="assets/bao-an/logo.png" alt="Logo Bảo Ân với biểu tượng giáo dục tiếng Trung" />
+            <div class="seal" aria-hidden="true">中</div>
           </div>
           <div>
-            <p class="section-kicker">Giá trị cốt lõi</p>
-            <h2 id="benefit-title">Một hành trình tập luyện để cơ thể nhẹ hơn, tâm trí yên hơn và bạn tự tin hơn mỗi ngày.</h2>
+            <p class="section-kicker">Vì sao nên chọn Bảo Ân?</p>
+            <h2 id="why-title">Một trung tâm học tiếng Trung thân thiện, có lộ trình và theo sát từng học viên.</h2>
             <p class="section-intro">
-              Mỗi buổi tập là sự kết hợp giữa chuyển động, hơi thở và sự lắng nghe cơ thể. Nội dung được điều chỉnh để phù hợp với người mới, phụ nữ văn phòng, mẹ sau sinh và người muốn chăm sóc sức khỏe lâu dài.
+              Nội dung học được biên soạn phù hợp với người mới bắt đầu, người mất gốc, người đi làm
+              bận rộn và học viên cần tiếng Trung cho mục tiêu thi cử hoặc giao tiếp.
             </p>
-            <div class="benefit-grid">
+            <div class="grid-3">
               <article class="card">
-                <h3>Dẻo dai và đúng tư thế hơn</h3>
-                <p>Hỗ trợ cải thiện độ linh hoạt, cảm nhận cơ thể và tư thế, đặc biệt với người ngồi nhiều.</p>
+                <h3>Lớp ít học viên</h3>
+                <p>Tăng tương tác, luyện phát âm kỹ hơn và giúp giáo viên kịp thời chỉnh lỗi.</p>
               </article>
               <article class="card">
-                <h3>Thư giãn và cân bằng cảm xúc</h3>
-                <p>Giúp bạn có khoảng thời gian buông áp lực, điều hòa hơi thở và tái tạo năng lượng sau ngày dài.</p>
+                <h3>Phương pháp nhanh nhớ lâu</h3>
+                <p>Kết hợp hình ảnh trực quan, giao tiếp thực tế và luyện phản xạ mỗi buổi học.</p>
               </article>
               <article class="card">
-                <h3>Giữ dáng nhẹ nhàng</h3>
-                <p>Hỗ trợ kiểm soát cân nặng và săn chắc cơ thể khi kết hợp cùng sinh hoạt, dinh dưỡng phù hợp.</p>
-              </article>
-              <article class="card">
-                <h3>Tự tin yêu bản thân</h3>
-                <p>Một không gian để bạn quay về chăm sóc chính mình, không so sánh và không áp lực.</p>
+                <h3>Hỗ trợ lâu dài</h3>
+                <p>Đồng hành giải đáp bài tập, ôn tập thêm và giữ động lực trong suốt quá trình học.</p>
               </article>
             </div>
           </div>
         </div>
       </section>
 
-      <section id="lo-trinh" class="program" aria-labelledby="program-title">
-        <div class="container program-grid">
+      <section id="khoa-hoc" class="courses" aria-labelledby="course-title">
+        <div class="container">
+          <p class="section-kicker">Các khóa học tại Bảo Ân</p>
+          <h2 id="course-title">Chọn đúng lớp cho mục tiêu học của bạn</h2>
+          <p class="section-intro">
+            Từ giao tiếp hằng ngày đến luyện thi HSK, mỗi khóa học đều tập trung vào khả năng dùng tiếng Trung
+            trong đời sống, học tập và công việc.
+          </p>
+          <div class="course-grid">
+            <article class="course-card">
+              <span class="course-tag">Giao tiếp</span>
+              <h3>Tiếng Trung Giao Tiếp</h3>
+              <p>Dành cho người mới bắt đầu muốn giao tiếp hằng ngày, tự tin nói chuyện và phản xạ nhanh hơn.</p>
+            </article>
+            <article class="course-card">
+              <span class="course-tag">HSK</span>
+              <h3>Luyện Thi HSK 1 - HSK 6</h3>
+              <p>Lộ trình nắm chắc từ vựng, ngữ pháp, luyện đề thực tế và tăng khả năng đạt điểm tốt.</p>
+            </article>
+            <article class="course-card">
+              <span class="course-tag">Công việc</span>
+              <h3>Tiếng Trung Cho Người Đi Làm</h3>
+              <p>Tập trung vào giao tiếp công việc, email, hội thoại thực tế và từ vựng chuyên ngành.</p>
+            </article>
+            <article class="course-card">
+              <span class="course-tag">Trẻ em</span>
+              <h3>Tiếng Trung Trẻ Em</h3>
+              <p>Học qua hình ảnh, phát âm chuẩn từ đầu và tạo hứng thú học tập tự nhiên cho trẻ.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="lo-trinh" class="timeline" aria-labelledby="timeline-title">
+        <div class="container split">
           <div>
-            <p class="section-kicker">Bạn sẽ nhận được gì?</p>
-            <h2 id="program-title">Lộ trình rõ ràng, dễ theo đuổi lâu dài</h2>
+            <p class="section-kicker">Lộ trình học</p>
+            <h2 id="timeline-title">Học có hệ thống để không còn cảm giác học trước quên sau.</h2>
             <p class="section-intro">
-              Yoga Ngọc Thư không chỉ đưa bạn vào bài tập. Lớp học giúp bạn hiểu mình đang tập gì, vì sao tập động tác đó và làm thế nào để duy trì một nhịp sống khỏe hơn.
+              Mỗi khóa tại Bảo Ân được dẫn dắt theo hướng dễ hiểu, bám sát thực tế và có phần luyện tập
+              giúp học viên biến kiến thức thành phản xạ.
             </p>
             <ul class="check-list">
-              <li>Giáo trình linh hoạt theo thể trạng từng học viên.</li>
-              <li>Huấn luyện tận tâm, chú trọng chỉnh động tác.</li>
-              <li>Không gian tập luyện yên tĩnh, thư giãn.</li>
-              <li>Cộng đồng học viên tích cực, cùng nhau duy trì động lực.</li>
+              <li>Giáo trình riêng, phù hợp người mới bắt đầu và người mất gốc.</li>
+              <li>Luyện phát âm, chữ Hán, từ vựng và ngữ pháp theo từng mục tiêu.</li>
+              <li>Thực hành giao tiếp trong các tình huống đời sống và công việc.</li>
+              <li>Ôn tập và hỗ trợ ngoài giờ để học viên duy trì tiến độ.</li>
             </ul>
           </div>
           <div class="steps">
             <article class="step">
               <div>
-                <h3>Lắng nghe cơ thể</h3>
-                <p>Khởi động nhẹ, nhận diện vùng căng cứng, đau mỏi và mục tiêu cá nhân trước khi bước vào bài tập.</p>
+                <h3>Đánh giá mục tiêu</h3>
+                <p>Xác định trình độ hiện tại, mục tiêu giao tiếp, thi HSK hoặc nhu cầu dùng tiếng Trung trong công việc.</p>
               </div>
             </article>
             <article class="step">
               <div>
-                <h3>Tập đúng và an toàn</h3>
-                <p>Thực hành các chuỗi động tác phù hợp, có điều chỉnh để hạn chế sai tư thế và giúp bạn tự tin hơn.</p>
+                <h3>Xây nền vững chắc</h3>
+                <p>Học phát âm, thanh điệu, chữ Hán cơ bản và các mẫu câu thường gặp theo cách dễ nhớ.</p>
               </div>
             </article>
             <article class="step">
               <div>
-                <h3>Thở, thiền và thư giãn</h3>
-                <p>Kết hợp hơi thở và thiền thư giãn để cơ thể được phục hồi, tâm trí dịu lại sau khi vận động.</p>
+                <h3>Luyện phản xạ</h3>
+                <p>Thực hành nói, nghe và xử lý tình huống mỗi buổi để kiến thức không chỉ nằm trên giấy.</p>
               </div>
             </article>
             <article class="step">
               <div>
-                <h3>Duy trì thói quen sống khỏe</h3>
-                <p>Hướng đến sự đều đặn, giúp bạn biến việc tập luyện thành một phần tự nhiên trong lịch sinh hoạt.</p>
+                <h3>Ôn tập và bứt phá</h3>
+                <p>Luyện đề, hệ thống lại kiến thức và theo dõi tiến bộ để học viên tự tin với mục tiêu của mình.</p>
               </div>
             </article>
           </div>
         </div>
       </section>
 
-      <section class="outcomes" aria-labelledby="outcome-title">
-        <div class="container">
-          <p class="section-kicker">Kết quả có thể hướng tới</p>
-          <h2 id="outcome-title">Không phải thay đổi cực đoan. Là cảm giác tốt hơn từng tuần.</h2>
-          <p class="section-intro">
-            Khi tập đều đặn, nhiều học viên có thể cảm nhận cơ thể nhẹ nhàng, linh hoạt hơn, tinh thần tích cực hơn và hình thành thói quen chăm sóc bản thân bền vững. Kết quả thực tế phụ thuộc vào thể trạng, tần suất tập và lối sống của từng người.
-          </p>
-          <div class="pain-grid">
-            <article class="card">
-              <h3>Cơ thể</h3>
-              <p>Dẻo dai hơn, giảm cảm giác căng cứng, hỗ trợ cải thiện tư thế và sự linh hoạt trong sinh hoạt hằng ngày.</p>
-            </article>
-            <article class="card">
-              <h3>Tinh thần</h3>
-              <p>Có thêm khoảng nghỉ chất lượng, hỗ trợ giảm căng thẳng và giúp bạn chủ động cân bằng cảm xúc.</p>
-            </article>
-            <article class="card">
-              <h3>Thói quen</h3>
-              <p>Xây dựng nhịp tập nhẹ nhàng, đều đặn, phù hợp với người bận rộn và dễ duy trì lâu dài.</p>
-            </article>
+      <section aria-labelledby="audience-title">
+        <div class="container audience-grid">
+          <div class="audience-banner">
+            <p class="section-kicker">Ai nên tham gia?</p>
+            <h2 id="audience-title">Tiếng Trung mở ra nhiều cơ hội hơn bạn nghĩ.</h2>
+            <p>Hãy bắt đầu bằng một lớp học phù hợp, nơi bạn được hướng dẫn rõ ràng và có người đồng hành trong từng giai đoạn.</p>
           </div>
-        </div>
-      </section>
-
-      <section aria-labelledby="proof-title">
-        <div class="container">
-          <p class="section-kicker">Vì sao chọn Yoga Ngọc Thư?</p>
-          <h2 id="proof-title">Tận tâm, gần gũi và phù hợp với người bắt đầu lại từ những điều nhỏ nhất.</h2>
-          <div class="proof-grid">
-            <article class="quote">
-              <p>
-                “Tôi muốn lớp học là nơi học viên được chỉnh sửa nhẹ nhàng, được lắng nghe và cảm thấy mình tiến bộ theo nhịp riêng, không cần so sánh với ai.”
-              </p>
-              <strong>Yoga Ngọc Thư</strong>
+          <div class="grid-3">
+            <article class="card">
+              <div class="number">01</div>
+              <h3>Học sinh - sinh viên</h3>
+              <p>Muốn học ngoại ngữ sớm, tạo lợi thế học tập và định hướng nghề nghiệp.</p>
             </article>
             <article class="card">
-              <h3>Cam kết truyền thông trung thực</h3>
-              <p>
-                Trang này không dùng cam kết tuyệt đối về sức khỏe hay vóc dáng. Mọi lợi ích được diễn đạt theo hướng hỗ trợ, tùy thể trạng và cần duy trì đều đặn.
-              </p>
-              <div class="section-actions">
-                <a class="btn" href="#lien-he">Trao đổi mục tiêu của bạn</a>
-              </div>
+              <div class="number">02</div>
+              <h3>Người đi làm</h3>
+              <p>Cần tiếng Trung để giao tiếp với đối tác, khách hàng hoặc mở rộng cơ hội nghề nghiệp.</p>
+            </article>
+            <article class="card">
+              <div class="number">03</div>
+              <h3>Người chuẩn bị thi HSK</h3>
+              <p>Cần lộ trình luyện thi rõ ràng, bám sát từ vựng, ngữ pháp và đề thực tế.</p>
+            </article>
+            <article class="card">
+              <div class="number">04</div>
+              <h3>Người mất gốc</h3>
+              <p>Muốn học lại từ đầu theo cách nhẹ nhàng, có hệ thống và không áp lực.</p>
+            </article>
+            <article class="card">
+              <div class="number">05</div>
+              <h3>Người kinh doanh</h3>
+              <p>Cần vốn từ thực tế để trao đổi, mua bán và làm việc với đối tác Trung Quốc.</p>
+            </article>
+            <article class="card">
+              <div class="number">06</div>
+              <h3>Phụ huynh cho trẻ học sớm</h3>
+              <p>Muốn con phát âm chuẩn, học qua hình ảnh và hình thành sự yêu thích ngoại ngữ.</p>
             </article>
           </div>
         </div>
@@ -1077,90 +1055,46 @@
       <section class="offer" aria-labelledby="offer-title">
         <div class="container offer-box">
           <div>
-            <p class="section-kicker">Thông tin đăng ký</p>
-            <h2 id="offer-title">Bắt đầu bằng một buổi tư vấn để chọn lớp phù hợp</h2>
-            <p>
-              Vì giá, ưu đãi và quà tặng chưa được cung cấp trong tài liệu, landing page ưu tiên kêu gọi tư vấn trước. Đây là cách phù hợp để thu lead mà không đưa thông tin chưa chắc lên trang.
+            <p class="section-kicker">Ưu đãi khai giảng</p>
+            <h2 id="offer-title">Đăng ký sớm để giữ chỗ trong lớp học giới hạn số lượng.</h2>
+            <p class="section-intro">
+              Số lượng học viên mỗi lớp được giới hạn để đảm bảo chất lượng tương tác và sự theo sát của giáo viên.
             </p>
-          </div>
-          <div class="price-note">
-            <strong>Nhận tư vấn lớp phù hợp</strong>
-            <p>Chia sẻ thể trạng, lịch rảnh và mục tiêu của bạn qua điện thoại hoặc Zalo. Yoga Ngọc Thư sẽ gợi ý hình thức tập phù hợp hơn.</p>
-            <div class="contact-lines">
-              <a class="contact-line" href="tel:0918890212">
-                <span>ĐT</span>
-                <span>0918 890 212</span>
-              </a>
-              <a class="contact-line" href="https://zalo.me/0918890212">
-                <span>Z</span>
-                <span>Zalo: 0918 890 212</span>
-              </a>
+            <div class="section-actions">
+              <a class="btn" href="#lien-he">Đăng ký giữ chỗ hôm nay</a>
+              <a class="btn secondary" href="#faq">Xem câu hỏi thường gặp</a>
             </div>
-            <a class="btn" href="#lien-he">Liên hệ tư vấn</a>
           </div>
-        </div>
-      </section>
-
-      <section class="gallery" aria-labelledby="gallery-title">
-        <div class="container">
-          <p class="section-kicker">Hình ảnh lớp học</p>
-          <h2 id="gallery-title">Không gian tập luyện thực tế tại Yoga Ngọc Thư</h2>
-          <p class="section-intro">
-            Những khoảnh khắc trong lớp học giúp bạn hình dung rõ hơn về không khí tập luyện: tập trung, gần gũi và có sự hướng dẫn sát sao.
-          </p>
-          <div class="gallery-grid">
-            <figure class="gallery-item large">
-              <img src="Anh/05.jpg" alt="Toàn cảnh lớp học Yoga Ngọc Thư trong buổi tập nhóm" />
-            </figure>
-            <figure class="gallery-item">
-              <img src="Anh/01.jpg" alt="Giáo viên hỗ trợ học viên điều chỉnh động tác yoga" />
-            </figure>
-            <figure class="gallery-item">
-              <img src="Anh/02.jpg" alt="Nhóm học viên Yoga Ngọc Thư tập luyện trên thảm" />
-            </figure>
-            <figure class="gallery-item">
-              <img src="Anh/04.jpg" alt="Học viên thực hiện động tác giữ thăng bằng trên gạch yoga" />
-            </figure>
-            <figure class="gallery-item">
-              <img src="Anh/00.jpg" alt="Học viên thực hiện động tác đứng tại phòng tập Yoga Ngọc Thư" />
-            </figure>
-          </div>
+          <ul class="bonus-list">
+            <li>Học thử miễn phí</li>
+            <li>Tặng tài liệu học</li>
+            <li>Ưu đãi học phí khi đăng ký sớm</li>
+            <li>Khai giảng liên tục từ cơ bản đến nâng cao</li>
+          </ul>
         </div>
       </section>
 
       <section id="faq" aria-labelledby="faq-title">
         <div class="container">
-          <p class="section-kicker">Giải đáp nhanh</p>
-          <h2 id="faq-title">Những câu hỏi thường gặp trước khi bắt đầu</h2>
+          <p class="section-kicker">Câu hỏi thường gặp</p>
+          <h2 id="faq-title">Những điều học viên thường hỏi trước khi bắt đầu</h2>
           <div class="faq-grid">
             <details>
-              <summary>Tôi chưa từng tập yoga, có theo được không?</summary>
-              <p>Có. Lớp phù hợp cho người mới bắt đầu, với bài tập và hướng dẫn được điều chỉnh theo thể trạng.</p>
+              <summary>Tôi chưa biết gì có học được không?</summary>
+              <p>Hoàn toàn được. Trung tâm có lớp dành cho người mới bắt đầu từ con số 0.</p>
             </details>
             <details>
-              <summary>Tập yoga có giúp giảm đau mỏi không?</summary>
-              <p>Yoga có thể hỗ trợ giảm cảm giác đau mỏi khi tập đúng cách và duy trì đều đặn. Nếu bạn có bệnh lý hoặc chấn thương, nên tham khảo chuyên môn y tế trước khi tập.</p>
+              <summary>Người đi làm bận có theo học được không?</summary>
+              <p>Có. Lịch học được thiết kế linh hoạt để phù hợp hơn với người đi làm.</p>
             </details>
             <details>
-              <summary>Bao lâu thì cảm nhận được thay đổi?</summary>
-              <p>Mỗi người có tốc độ khác nhau. Nhiều thay đổi đến từ sự đều đặn, chế độ sinh hoạt và khả năng lắng nghe cơ thể trong quá trình tập.</p>
+              <summary>Có được học thử không?</summary>
+              <p>Có. Bảo Ân hỗ trợ học thử miễn phí trước khi học viên đăng ký chính thức.</p>
             </details>
             <details>
-              <summary>Lớp có phù hợp với phụ nữ sau sinh không?</summary>
-              <p>Có thể phù hợp tùy giai đoạn hồi phục. Bạn nên chia sẻ tình trạng hiện tại để được tư vấn bài tập nhẹ nhàng và an toàn hơn.</p>
+              <summary>Trung tâm có hỗ trợ sau giờ học không?</summary>
+              <p>Có. Học viên được hỗ trợ giải đáp bài tập và ôn tập thêm trong suốt quá trình học.</p>
             </details>
-          </div>
-        </div>
-      </section>
-
-      <section class="final-cta" aria-labelledby="final-title">
-        <div class="container">
-          <h2 id="final-title">Cơ thể bạn xứng đáng được chăm sóc một cách dịu dàng và bền bỉ.</h2>
-          <p class="lead">
-            Liên hệ Yoga Ngọc Thư qua điện thoại hoặc Zalo để được tư vấn lớp học phù hợp với thể trạng, lịch sinh hoạt và mục tiêu hiện tại của bạn.
-          </p>
-          <div class="section-actions">
-            <a class="btn" href="#lien-he">Đăng ký tư vấn ngay</a>
           </div>
         </div>
       </section>
@@ -1168,37 +1102,66 @@
       <section id="lien-he" class="contact" aria-labelledby="contact-title">
         <div class="container contact-grid">
           <div class="contact-panel">
-            <p class="section-kicker">Liên hệ</p>
-            <h2 id="contact-title">Yoga Ngọc Thư</h2>
-            <p>
-              Tư vấn lớp học, lịch tập và hình thức phù hợp với thể trạng của bạn.
+            <p class="section-kicker">Thông tin liên hệ</p>
+            <h2 id="contact-title">Bắt đầu hành trình chinh phục tiếng Trung cùng Bảo Ân</h2>
+            <p class="section-intro">
+              Để lại thông tin tư vấn hoặc liên hệ trực tiếp với trung tâm để được gợi ý lớp học phù hợp
+              với trình độ, lịch học và mục tiêu của bạn.
             </p>
-            <div class="contact-lines" aria-label="Thông tin liên hệ">
-              <a class="contact-line" href="tel:0918890212">
-                <span>ĐT</span>
-                <span>Điện thoại: 0918 890 212</span>
-              </a>
-              <a class="contact-line" href="https://zalo.me/0918890212">
-                <span>Z</span>
-                <span>Zalo: 0918 890 212</span>
-              </a>
+            <div class="contact-line">
+              <span>ĐC</span>
+              <span>Số 03 Dương Đình Nghệ - Phan Rang - Khánh Hòa</span>
             </div>
-            <ul class="check-list">
-              <li>Tư vấn theo thể trạng và mục tiêu cá nhân.</li>
-              <li>Phù hợp cho phụ nữ văn phòng, mẹ sau sinh và người mới tập.</li>
-              <li>Ưu tiên sự an toàn, đều đặn và cảm giác thoải mái khi tập.</li>
-            </ul>
+            <div class="contact-line">
+              <span>TT</span>
+              <span>Hotline, Zalo, Facebook và Website: đang cập nhật</span>
+            </div>
           </div>
+          <form class="form-panel" action="#" method="post">
+            <label>
+              Họ và tên
+              <input name="name" type="text" placeholder="Nhập họ tên của bạn" />
+            </label>
+            <label>
+              Số điện thoại
+              <input name="phone" type="tel" placeholder="Nhập số điện thoại" />
+            </label>
+            <label>
+              Khóa học quan tâm
+              <select name="course">
+                <option>Tiếng Trung giao tiếp</option>
+                <option>Luyện thi HSK</option>
+                <option>Tiếng Trung cho người đi làm</option>
+                <option>Tiếng Trung trẻ em</option>
+              </select>
+            </label>
+            <label>
+              Ghi chú
+              <textarea name="message" placeholder="Bạn muốn học để giao tiếp, đi làm hay thi HSK?"></textarea>
+            </label>
+            <button class="btn" type="submit">Gửi thông tin tư vấn</button>
+            <p class="form-note" id="form-note" aria-live="polite"></p>
+          </form>
         </div>
       </section>
     </main>
 
     <footer>
       <div class="container">
-        <strong>Yoga Ngọc Thư</strong>
-        <span>Đánh thức năng lượng, cân bằng thân tâm</span>
+        <strong>Trung Tâm Tiếng Trung Bảo Ân</strong>
+        <span>Kết Nối Ngôn Ngữ - Mở Cửa Tương Lai</span>
       </div>
     </footer>
+    <script>
+      const form = document.querySelector(".form-panel");
+      const formNote = document.querySelector("#form-note");
 
+      form.addEventListener("submit", (event) => {
+        event.preventDefault();
+        formNote.textContent = "Cảm ơn bạn. Bảo Ân sẽ liên hệ tư vấn khi kênh nhận thông tin được kết nối.";
+        formNote.classList.add("success");
+        form.reset();
+      });
+    </script>
   </body>
 </html>
